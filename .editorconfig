@@ -1,0 +1,22 @@
+# =============================================================================
+#  Resources\  —  acá no hay código, solo graficos.json y PNGs.
+#
+#  El charset es lo que importa: los nombres semánticos del índice llevan
+#  acentos ("enemigo.arañaGigante") y un archivo guardado en la codificación de
+#  Windows los rompe al leerlo desde el cargador del cliente.
+# =============================================================================
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

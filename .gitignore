@@ -1,0 +1,79 @@
+# =============================================================================
+#  Resources\  —  el arte importado de Austral AO
+#
+#  ⚠ Esta carpeta NO tiene código. Son PNGs y graficos.json, nada más.
+#
+#  Por eso acá NO va el .gitignore de Visual Studio que traen Client\ y
+#  GameApi\: son 7.883 bytes de reglas para bin\, obj\, .vs\, ReSharper y
+#  paquetes NuGet que no van a matchear nunca en este repo, y que dan la
+#  ilusión de estar protegiendo algo. Lo que hay que frenar acá es otra cosa.
+#
+#  La regla de fondo: SE VERSIONA LA FUENTE, NO LO HORNEADO.
+#  El repo del cliente de Austral versiona su atlas horneado (1,6 GB en páginas
+#  de 25-30 MB) y por eso su carpeta .git pesa 4,7 GB. Ese es el error que este
+#  archivo existe para no repetir.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+#  Los .orig  —  la regla más importante del archivo
+# -----------------------------------------------------------------------------
+# La fuente (D:\Github\Tidies24\Tools\asset-legacy\graficos) tiene 1312 hojas HD
+# y además 1312 .PNG.orig, que son los originales en escala 1x: 42 MB que no usa
+# nadie, porque el juego trabaja en x4 y las coordenadas de graficos.json ya
+# están en ese espacio (README §8).
+#
+# Se bloquean acá como cinturón de seguridad: alcanza un `copy *.PNG*` distraído
+# para arrastrarlos.
+
+*.orig
+*.PNG.orig
+*.png.orig
+
+
+# -----------------------------------------------------------------------------
+#  El atlas horneado
+# -----------------------------------------------------------------------------
+# Todavía no existe: se hornea recién cuando el set de gráficos esté cerrado
+# (README §8). Cuando exista, se genera desde los PNG sueltos con el
+# AtlasBuilder. Es un ARTEFACTO — se rehornea, no se guarda.
+
+atlas/
+atlas_*.png
+atlas_*.res
+atlas_map.json
+
+
+# -----------------------------------------------------------------------------
+#  Cache de Godot
+# -----------------------------------------------------------------------------
+# Resources\ vive AFUERA del proyecto Godot justamente para que Godot no la
+# importe ni genere .import acá (README §3). Estas reglas están por si algún día
+# la carpeta termina adentro por accidente.
+
+.godot/
+*.import
+
+
+# -----------------------------------------------------------------------------
+#  Archivos de trabajo de editores de imagen
+# -----------------------------------------------------------------------------
+# El juego consume PNG. Un .psd de algo hecho a mano pesa y no lo lee nadie; si
+# alguna vez hace falta versionar uno, se agrega la excepción explícita con `!`.
+
+*.psd
+*.xcf
+*.ai
+*.kra
+*.tmp
+*~
+
+
+# -----------------------------------------------------------------------------
+#  Basura del sistema operativo
+# -----------------------------------------------------------------------------
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

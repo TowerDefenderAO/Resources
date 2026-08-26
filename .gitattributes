@@ -1,0 +1,32 @@
+# =============================================================================
+#  Resources\  —  arte importado. Acá casi todo es binario.
+#
+#  Lo único que se diffea de verdad es graficos.json, que es el índice: qué
+#  hoja, qué región y cuántos frames tiene cada gráfico (README §8). Ese
+#  archivo tiene que quedar legible en el diff, porque es donde se revisa que
+#  una importación no haya roto una animación.
+# =============================================================================
+
+* text=auto eol=lf
+
+# El índice propio: es lo que se lee en cada pull request de arte.
+*.json      text
+
+*.md        text
+
+# -----------------------------------------------------------------------------
+#  Las hojas
+#
+#  ⚠ Ojo con las mayúsculas: de las 1312 hojas de la fuente, 1271 terminan en
+#  .PNG y 41 en .png minúscula. Git en Windows no distingue, en Linux sí, así
+#  que van las dos formas escritas. Es la misma trampa que documenta el
+#  README §8 para el script de copia.
+# -----------------------------------------------------------------------------
+*.png       binary
+*.PNG       binary
+*.jpg       binary
+*.webp      binary
+*.ogg       binary
+*.wav       binary
+*.ttf       binary
+*.otf       binary
