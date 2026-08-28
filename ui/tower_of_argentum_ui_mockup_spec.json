@@ -1,0 +1,630 @@
+{
+  "project": "Tower of Argentum",
+  "artifact": "UI mockup specification",
+  "source_image": "panel_de_interfaz_tower_of_argentum.png",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "units": "px",
+    "origin": "top-left",
+    "note": "Coordenadas tomadas sobre la preview generada. Sirven como especificación visual/base de implementación; pequeños ajustes de 2-8 px pueden ser necesarios al pasar a Godot."
+  },
+  "palette": {
+    "background_main": "#0F131A",
+    "background_alt": "#161C24",
+    "panel": "#1C2430",
+    "panel_elevated": "#243041",
+    "border_soft": "#334155",
+    "border_normal": "#46566F",
+    "border_light": "#6A7C98",
+    "text_primary": "#EAF2FF",
+    "text_secondary": "#B7C4D8",
+    "text_muted": "#7E8CA3",
+    "text_disabled": "#5B6575",
+    "success": "#45D26B",
+    "warning": "#F7B844",
+    "uncommon": "#46C96B",
+    "rare": "#3EA1FF",
+    "epic": "#A95CFF",
+    "legendary": "#F0B63C",
+    "unique": "#FF4B47",
+    "info": "#45C7FF",
+    "danger": "#E04A4A"
+  },
+  "layout": [
+    {
+      "id": "palette_reference",
+      "type": "reference_panel",
+      "rect": {
+        "x": 9,
+        "y": 51,
+        "w": 512,
+        "h": 831
+      },
+      "description": "Panel de referencia visual con tokens de color, materiales y rarezas. No forma parte del HUD jugable final.",
+      "children": [
+        {
+          "id": "palette_backgrounds",
+          "rect": {
+            "x": 20,
+            "y": 60,
+            "w": 275,
+            "h": 142
+          },
+          "description": "Muestras de fondos principales y secundarios."
+        },
+        {
+          "id": "palette_borders",
+          "rect": {
+            "x": 301,
+            "y": 60,
+            "w": 210,
+            "h": 142
+          },
+          "description": "Muestras de bordes y niveles de contraste."
+        },
+        {
+          "id": "palette_text",
+          "rect": {
+            "x": 20,
+            "y": 214,
+            "w": 491,
+            "h": 132
+          },
+          "description": "Jerarquía de color para texto primario, secundario, muted y disabled."
+        },
+        {
+          "id": "palette_functional",
+          "rect": {
+            "x": 20,
+            "y": 357,
+            "w": 491,
+            "h": 153
+          },
+          "description": "Estados funcionales y colores de rareza."
+        },
+        {
+          "id": "palette_materials",
+          "rect": {
+            "x": 20,
+            "y": 520,
+            "w": 491,
+            "h": 173
+          },
+          "description": "Muestras visuales para vidrio oscuro, metal, borde brillante, glow y sombra."
+        },
+        {
+          "id": "palette_rarity",
+          "rect": {
+            "x": 20,
+            "y": 704,
+            "w": 491,
+            "h": 167
+          },
+          "description": "Leyenda completa de marcos de rareza."
+        }
+      ]
+    },
+    {
+      "id": "game_ui",
+      "type": "main_interface",
+      "rect": {
+        "x": 532,
+        "y": 51,
+        "w": 1108,
+        "h": 868
+      },
+      "description": "Interfaz principal del mockup de inventario/tienda/build.",
+      "children": [
+        {
+          "id": "top_status_bar",
+          "type": "hud_header",
+          "rect": {
+            "x": 538,
+            "y": 54,
+            "w": 1098,
+            "h": 72
+          },
+          "description": "Barra superior con estado de la partida.",
+          "children": [
+            {
+              "id": "wave_status",
+              "rect": {
+                "x": 550,
+                "y": 62,
+                "w": 185,
+                "h": 55
+              },
+              "description": "Oleada actual / total e indicador de peligro."
+            },
+            {
+              "id": "tower_hp",
+              "rect": {
+                "x": 753,
+                "y": 62,
+                "w": 308,
+                "h": 55
+              },
+              "description": "Vida de la torre con icono y barra horizontal."
+            },
+            {
+              "id": "gold_status",
+              "rect": {
+                "x": 1080,
+                "y": 62,
+                "w": 224,
+                "h": 55
+              },
+              "description": "Oro disponible actual."
+            },
+            {
+              "id": "settings_button",
+              "rect": {
+                "x": 1323,
+                "y": 66,
+                "w": 52,
+                "h": 45
+              },
+              "description": "Botón de configuración."
+            },
+            {
+              "id": "menu_button",
+              "rect": {
+                "x": 1412,
+                "y": 66,
+                "w": 117,
+                "h": 45
+              },
+              "description": "Botón de menú."
+            },
+            {
+              "id": "pause_button",
+              "rect": {
+                "x": 1557,
+                "y": 66,
+                "w": 49,
+                "h": 45
+              },
+              "description": "Pausa/reanudación."
+            }
+          ]
+        },
+        {
+          "id": "heroes_panel",
+          "type": "roster",
+          "rect": {
+            "x": 540,
+            "y": 143,
+            "w": 181,
+            "h": 567
+          },
+          "description": "Lista vertical de héroes/personajes disponibles o seleccionados.",
+          "children": [
+            {
+              "id": "heroes_title",
+              "rect": {
+                "x": 547,
+                "y": 145,
+                "w": 166,
+                "h": 32
+              },
+              "description": "Título HÉROES / CLASES."
+            },
+            {
+              "id": "hero_card_1",
+              "rect": {
+                "x": 547,
+                "y": 181,
+                "w": 165,
+                "h": 95
+              },
+              "description": "Tarjeta de personaje seleccionada."
+            },
+            {
+              "id": "hero_card_2",
+              "rect": {
+                "x": 547,
+                "y": 286,
+                "w": 165,
+                "h": 95
+              },
+              "description": "Segunda tarjeta de personaje."
+            },
+            {
+              "id": "hero_card_3",
+              "rect": {
+                "x": 547,
+                "y": 391,
+                "w": 165,
+                "h": 95
+              },
+              "description": "Tercera tarjeta de personaje."
+            },
+            {
+              "id": "hero_card_4",
+              "rect": {
+                "x": 547,
+                "y": 496,
+                "w": 165,
+                "h": 95
+              },
+              "description": "Cuarta tarjeta de personaje."
+            },
+            {
+              "id": "hero_card_locked",
+              "rect": {
+                "x": 547,
+                "y": 601,
+                "w": 165,
+                "h": 95
+              },
+              "description": "Slot futuro/bloqueado."
+            }
+          ]
+        },
+        {
+          "id": "inventory_panel",
+          "type": "inventory_tabs",
+          "rect": {
+            "x": 729,
+            "y": 143,
+            "w": 381,
+            "h": 567
+          },
+          "description": "Zona central de navegación e inventario.",
+          "children": [
+            {
+              "id": "tab_perks",
+              "rect": {
+                "x": 735,
+                "y": 145,
+                "w": 112,
+                "h": 39
+              },
+              "description": "Pestaña activa: Perks."
+            },
+            {
+              "id": "tab_weapons",
+              "rect": {
+                "x": 850,
+                "y": 145,
+                "w": 117,
+                "h": 39
+              },
+              "description": "Pestaña: Armas."
+            },
+            {
+              "id": "tab_blueprints",
+              "rect": {
+                "x": 970,
+                "y": 145,
+                "w": 132,
+                "h": 39
+              },
+              "description": "Pestaña: Planos."
+            },
+            {
+              "id": "filter_dropdown",
+              "rect": {
+                "x": 744,
+                "y": 196,
+                "w": 127,
+                "h": 32
+              },
+              "description": "Filtro de categoría."
+            },
+            {
+              "id": "sort_dropdown",
+              "rect": {
+                "x": 945,
+                "y": 196,
+                "w": 153,
+                "h": 32
+              },
+              "description": "Ordenamiento por rareza u otro criterio."
+            },
+            {
+              "id": "perk_grid",
+              "rect": {
+                "x": 743,
+                "y": 252,
+                "w": 358,
+                "h": 362
+              },
+              "description": "Grilla de perks con marco por rareza y nivel.",
+              "grid": {
+                "columns": 5,
+                "visible_rows": 4,
+                "cell_w": 62,
+                "cell_h": 82,
+                "gap_x": 10,
+                "gap_y": 12
+              }
+            },
+            {
+              "id": "inventory_capacity",
+              "rect": {
+                "x": 743,
+                "y": 650,
+                "w": 355,
+                "h": 42
+              },
+              "description": "Capacidad usada/máxima y botón +."
+            }
+          ]
+        },
+        {
+          "id": "selected_item_panel",
+          "type": "item_detail",
+          "rect": {
+            "x": 1121,
+            "y": 143,
+            "w": 204,
+            "h": 567
+          },
+          "description": "Detalle del perk seleccionado.",
+          "children": [
+            {
+              "id": "selected_item_title",
+              "rect": {
+                "x": 1140,
+                "y": 164,
+                "w": 166,
+                "h": 52
+              },
+              "description": "Nombre y rareza."
+            },
+            {
+              "id": "selected_item_icon",
+              "rect": {
+                "x": 1180,
+                "y": 228,
+                "w": 85,
+                "h": 85
+              },
+              "description": "Icono grande."
+            },
+            {
+              "id": "selected_item_description",
+              "rect": {
+                "x": 1138,
+                "y": 332,
+                "w": 171,
+                "h": 72
+              },
+              "description": "Descripción funcional breve."
+            },
+            {
+              "id": "selected_item_stats",
+              "rect": {
+                "x": 1138,
+                "y": 414,
+                "w": 171,
+                "h": 112
+              },
+              "description": "Parámetros del perk."
+            },
+            {
+              "id": "selected_item_price",
+              "rect": {
+                "x": 1138,
+                "y": 535,
+                "w": 171,
+                "h": 38
+              },
+              "description": "Precio."
+            },
+            {
+              "id": "buy_button",
+              "rect": {
+                "x": 1140,
+                "y": 588,
+                "w": 162,
+                "h": 40
+              },
+              "description": "Acción COMPRAR."
+            },
+            {
+              "id": "equip_button",
+              "rect": {
+                "x": 1140,
+                "y": 638,
+                "w": 162,
+                "h": 38
+              },
+              "description": "Acción EQUIPAR."
+            }
+          ]
+        },
+        {
+          "id": "shop_panel",
+          "type": "rotating_shop",
+          "rect": {
+            "x": 1335,
+            "y": 143,
+            "w": 300,
+            "h": 567
+          },
+          "description": "Tienda rotativa con 4 ofertas simultáneas de héroes/personajes, perks y planos.",
+          "children": [
+            {
+              "id": "shop_title",
+              "rect": {
+                "x": 1352,
+                "y": 150,
+                "w": 266,
+                "h": 41
+              },
+              "description": "Título TIENDA."
+            },
+            {
+              "id": "shop_timer",
+              "rect": {
+                "x": 1361,
+                "y": 190,
+                "w": 247,
+                "h": 32
+              },
+              "description": "Tiempo restante hasta rotación."
+            },
+            {
+              "id": "shop_card_1",
+              "rect": {
+                "x": 1350,
+                "y": 231,
+                "w": 132,
+                "h": 205
+              },
+              "description": "Oferta 1."
+            },
+            {
+              "id": "shop_card_2",
+              "rect": {
+                "x": 1493,
+                "y": 231,
+                "w": 132,
+                "h": 205
+              },
+              "description": "Oferta 2."
+            },
+            {
+              "id": "shop_card_3",
+              "rect": {
+                "x": 1350,
+                "y": 451,
+                "w": 132,
+                "h": 198
+              },
+              "description": "Oferta 3."
+            },
+            {
+              "id": "shop_card_4",
+              "rect": {
+                "x": 1493,
+                "y": 451,
+                "w": 132,
+                "h": 198
+              },
+              "description": "Oferta 4."
+            },
+            {
+              "id": "shop_refresh_button",
+              "rect": {
+                "x": 1350,
+                "y": 665,
+                "w": 168,
+                "h": 35
+              },
+              "description": "Actualizar tienda manualmente."
+            },
+            {
+              "id": "shop_refresh_cost",
+              "rect": {
+                "x": 1525,
+                "y": 665,
+                "w": 100,
+                "h": 35
+              },
+              "description": "Costo del refresh."
+            }
+          ]
+        },
+        {
+          "id": "build_panel",
+          "type": "loadout_bar",
+          "rect": {
+            "x": 539,
+            "y": 724,
+            "w": 1097,
+            "h": 150
+          },
+          "description": "Resumen inferior de la build activa.",
+          "children": [
+            {
+              "id": "equipped_perks",
+              "rect": {
+                "x": 551,
+                "y": 736,
+                "w": 405,
+                "h": 123
+              },
+              "description": "Perks equipados y slots libres."
+            },
+            {
+              "id": "equipped_weapon",
+              "rect": {
+                "x": 969,
+                "y": 736,
+                "w": 186,
+                "h": 123
+              },
+              "description": "Arma equipada y stats."
+            },
+            {
+              "id": "active_blueprints",
+              "rect": {
+                "x": 1167,
+                "y": 736,
+                "w": 220,
+                "h": 123
+              },
+              "description": "Planos activos/conocidos."
+            },
+            {
+              "id": "consumables",
+              "rect": {
+                "x": 1401,
+                "y": 736,
+                "w": 223,
+                "h": 123
+              },
+              "description": "Consumibles y cantidades."
+            }
+          ]
+        },
+        {
+          "id": "footer_bar",
+          "type": "footer_legend",
+          "rect": {
+            "x": 538,
+            "y": 883,
+            "w": 1098,
+            "h": 37
+          },
+          "description": "Consejo contextual + leyenda rápida de rarezas.",
+          "children": [
+            {
+              "id": "context_tip",
+              "rect": {
+                "x": 555,
+                "y": 888,
+                "w": 558,
+                "h": 26
+              },
+              "description": "Consejo corto de build/mecánicas."
+            },
+            {
+              "id": "rarity_legend_compact",
+              "rect": {
+                "x": 1115,
+                "y": 888,
+                "w": 500,
+                "h": 26
+              },
+              "description": "Leyenda compacta de rarezas."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interaction_notes": [
+    "La tienda muestra exactamente 4 ofertas simultáneas.",
+    "Las ofertas pueden mezclar héroes/personajes, perks y planos.",
+    "La rareza se comunica con borde, glow y título; el fondo de tarjeta debe mantenerse oscuro.",
+    "La grilla de perks prioriza lectura rápida: icono, nivel y rareza.",
+    "El panel de detalle evita tooltips gigantes sobre la grilla.",
+    "La barra inferior permite leer la build completa de un vistazo.",
+    "Las coordenadas sirven como guía visual; en Godot conviene resolver el layout con Containers y anchors, no con posiciones absolutas rígidas."
+  ]
+}
