@@ -1,0 +1,24 @@
+{
+  // `perks\iconos.json` lleva comentarios A PROPÓSITO: el porqué de cada match
+  // entre dibujo y perk vive al lado del match, igual que en los datos de balance
+  // de `Client\Datos\` (DATOS.md §4).
+  //
+  // Los dos que lo leen los toleran —`CargadorIconos.cs` con
+  // `JsonCommentHandling.Skip`, y `recortar.ps1` sacando las líneas que empiezan
+  // con `//` antes de `ConvertFrom-Json`—, así que no molestan a nadie salvo al
+  // validador de VS Code, que trata todo `.json` como JSON estricto y marca
+  // «Comments are not permitted in JSON». Esto le dice que lo abra como JSONC,
+  // que es lo que realmente es.
+  //
+  // ⚠ Está duplicado en `..\.vscode\settings.json` a propósito: VS Code solo lee
+  // el `.vscode` de la carpeta que se abrió como workspace, y este proyecto se
+  // abre a veces desde la raíz `TowerDefender\` y a veces desde `Resources\`.
+  // Esta copia es la que se versiona —la raíz no es un repo—.
+  //
+  // ⚠ Hace falta una línea POR SUBCARPETA: en VS Code el `*` no cruza barras.
+  // `graficos.json` queda afuera porque no lleva comentarios: lo escribe
+  // `--traer-grafico`, que reescribe el archivo entero.
+  "files.associations": {
+    "**/perks/*.json": "jsonc"
+  }
+}

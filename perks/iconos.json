@@ -1,112 +1,240 @@
 {
-  "version": 1,
+  // ---------------------------------------------------------------------------
+  //  El índice de los iconos de perk.
+  //
+  //  ⚠ ESTE ARCHIVO LO LEE EL JUEGO. Client\Scripts\CargadorIconos.cs entra por
+  //    el bloque "porPerk" y saca la ruta del recorte. Dejó de ser papeleo del
+  //    pipeline de arte: si acá se rompe algo, la mochila se dibuja sin iconos.
+  //
+  //  ⚠ NO ENTRA AL HASH DE /run/start, y esa es la razón de que viva en
+  //    Resources\ y no en Client\Datos\. El hash cubre el TEXTO CRUDO de los
+  //    siete JSON de balance, comentarios incluidos: meterle un campo "icon" a
+  //    perks.json cambiaría el hash, y eso es TEMPORADA NUEVA del ranking por
+  //    una decisión puramente cosmética. El icono es presentación, no entrada de
+  //    la simulación — igual que Datos\lang\, y por la misma razón.
+  //    perks.json NO SE TOCA por esto.
+  //
+  //  ⚠ EL COLOR DEL MARCO NO ES EL TIER. La lámina trae seis rarezas y el juego
+  //    tiene cuatro (bronze/silver/gold/unique), así que el match se hizo por lo
+  //    que el dibujo SIGNIFICA. Escarcha es gold y su icono tiene marco verde;
+  //    Onda de Frío es unique y el suyo es morado. Si el marco tiene que
+  //    coincidir, hay que rehornear el icono componiéndolo sobre
+  //    fondos\<rareza>.png — para eso la lámina trae los marcos vacíos aparte.
+  //
+  //  ⚠ LOS COMENTARIOS VAN EN "//", NO EN CLAVES "_loquesea". Antes la cabecera
+  //    eran siete strings falsos ("_fuente", "_match", "_color"...) que el
+  //    parser tenía que leer y descartar: son datos que fingen ser prosa. La
+  //    convención del proyecto es el comentario de verdad, igual que en
+  //    Client\Datos\*.json, y los dos lectores lo toleran — el juego con
+  //    JsonCommentHandling.Skip y recortar.ps1 sacando las líneas que empiezan
+  //    con "//" antes de ConvertFrom-Json.
+  //    ⚠ POR ESO NO HAY COMENTARIOS AL FINAL DE UNA LÍNEA CON DATOS: recortar.ps1
+  //      borra la línea entera, así que un "// nota" pegado a un icono se llevaría
+  //      el icono puesto.
+  //
+  //  LOS CAMPOS
+  //
+  //  "fuente"   La lámina entera que entregó el diseñador, 1536x1024. Es el
+  //             ORIGINAL: los recortes de las subcarpetas salen de acá y se
+  //             regeneran con recortar.ps1. No borrarla.
+  //
+  //  "x", "y", "lado"
+  //             Dónde está el icono adentro de la lámina, en píxeles. Cada uno se
+  //             recortó cuadrado, centrado en el marco y con el resplandor
+  //             incluido. El lado varía por sección (63 a 110 px) porque el
+  //             resplandor de un marco dorado ocupa más que el de uno gris; el
+  //             que dibuja los escala al cuadro que necesita.
+  //
+  //  "etiqueta" Lo que la lámina trae escrito debajo del icono. Es la etiqueta
+  //             DEL DISEÑADOR, no un texto del jugador: los nombres que se ven
+  //             en pantalla salen de Client\Datos\lang\. Dos vienen con errata
+  //             y se conservan tal cual —«Contrataque» y «Aura de Velocdad»—
+  //             porque los nombres de archivo salieron de ahí.
+  //
+  //  "archivo"  El recorte, relativo a esta carpeta. Con "/" y no "\": es la ruta
+  //             que consume Godot.
+  //
+  //  "perk"     Las keys de Client\Datos\perks.json que usan este dibujo. Es un
+  //             ARRAY porque los perks numéricos comparten icono: filo, temple,
+  //             empunadura, furia, sana e ira son todos +daño y el póster tiene
+  //             una sola espada.
+  //
+  //  "uso"      Solo en los iconos SIN "perk", y dice por qué no lo tienen. No es
+  //             lo mismo un icono de sobra que uno que nunca va a ser un perk:
+  //               npcAtacante  Reservado para los perks de los NPCs atacantes,
+  //                            que todavía no existen en los datos. Son cuatro:
+  //                            vida, armadura, regeneración y evasión. NO son
+  //                            huérfanos, son pendientes.
+  //               libre        Sin dueño y disponible para el próximo perk que se
+  //                            agregue. Son 17.
+  //               decoracion   No es un perk NI VA A SERLO: los 6 overlays, los 6
+  //                            fondos de rareza y el ejemplo de "equipado". Son 13.
+  //
+  //  "match"    Qué tan bien pega el dibujo con lo que el perk hace:
+  //               exacto       El dibujo dice lo que el perk hace.
+  //               compartido   Varios perks del mismo efecto reusan el dibujo.
+  //               aproximado   Elegido leyendo el dibujo, sin equivalente directo.
+  //                            REVISABLE — son 13, con el porqué en su "nota".
+  // ---------------------------------------------------------------------------
+  "version": 2,
   "fuente": "img perks grilla.png",
-  "_fuente": "La lámina entera que entregó el diseñador, 1536x1024. Es el ORIGINAL: los recortes de las subcarpetas salen de acá y se pueden volver a generar. No borrarla.",
-  "_recorte": "Cada icono se recortó cuadrado, centrado en el marco y con el resplandor incluido. `x`, `y` y `lado` son las coordenadas dentro de la lámina, en píxeles. El lado varía por sección porque el resplandor no mide lo mismo en todas.",
-  "_etiqueta": "El texto que la lámina trae escrito debajo del icono, tal cual. Dos vienen con errata del diseñador: `contrataque` («Contrataque») y `auraDeVelocidad` («Aura de Velocdad»). El texto que se muestra al jugador NO sale de acá: sale de Client\\Datos\\lang\\.",
-  "_pendiente": "Estos iconos NO están mapeados todavía a los 47 perks de Client\\Datos\\perks.json. La lámina usa seis rarezas (común/infrecuente/raro/épico/legendario/único) y el juego usa cuatro tiers (bronze/silver/gold/unique), y los nombres coinciden solo en parte. El mapeo es una decisión de diseño, no de importación.",
+
   "secciones": {
     // PERKS COMUNES (GRIS)
     "comunes": {
-      "dano": { "archivo": "comunes/dano.png", "etiqueta": "Daño +", "x": 20, "y": 42, "lado": 80 },
-      "cadencia": { "archivo": "comunes/cadencia.png", "etiqueta": "Cadencia +", "x": 116, "y": 46, "lado": 79 },
-      "alcance": { "archivo": "comunes/alcance.png", "etiqueta": "Alcance +", "x": 211, "y": 43, "lado": 82 },
-      "vida": { "archivo": "comunes/vida.png", "etiqueta": "Vida +", "x": 309, "y": 43, "lado": 82 },
-      "armadura": { "archivo": "comunes/armadura.png", "etiqueta": "Armadura +", "x": 403, "y": 43, "lado": 82 },
-      "oro": { "archivo": "comunes/oro.png", "etiqueta": "Oro +", "x": 497, "y": 43, "lado": 82 },
-      "regeneracion": { "archivo": "comunes/regeneracion.png", "etiqueta": "Regeneración", "x": 591, "y": 43, "lado": 82 },
-      "precision": { "archivo": "comunes/precision.png", "etiqueta": "Precisión +", "x": 686, "y": 43, "lado": 82 }
+      "dano": { "archivo": "comunes/dano.png", "etiqueta": "Daño +", "x": 20, "y": 42, "lado": 80, "perk": ["filo", "temple", "empunadura", "furia", "sana", "ira"], "match": "compartido" },
+      "cadencia": { "archivo": "comunes/cadencia.png", "etiqueta": "Cadencia +", "x": 116, "y": 46, "lado": 79, "perk": ["pulso", "reflejos", "muneca", "celeridad", "frenesi", "vendaval"], "match": "compartido" },
+      "alcance": { "archivo": "comunes/alcance.png", "etiqueta": "Alcance +", "x": 211, "y": 43, "lado": 82, "perk": ["vista", "halcon"], "match": "compartido" },
+      "vida": { "archivo": "comunes/vida.png", "etiqueta": "Vida +", "x": 309, "y": 43, "lado": 82, "uso": "npcAtacante" },
+      "armadura": { "archivo": "comunes/armadura.png", "etiqueta": "Armadura +", "x": 403, "y": 43, "lado": 82, "uso": "npcAtacante" },
+      "oro": { "archivo": "comunes/oro.png", "etiqueta": "Oro +", "x": 497, "y": 43, "lado": 82, "uso": "libre" },
+      "regeneracion": { "archivo": "comunes/regeneracion.png", "etiqueta": "Regeneración", "x": 591, "y": 43, "lado": 82, "uso": "npcAtacante" },
+      "precision": { "archivo": "comunes/precision.png", "etiqueta": "Precisión +", "x": 686, "y": 43, "lado": 82, "perk": ["punteria", "ojoDeAguila"], "match": "compartido" }
     },
     // PERKS INFRECUENTES (VERDE)
     "infrecuentes": {
-      "perforacion": { "archivo": "infrecuentes/perforacion.png", "etiqueta": "Perforación", "x": 814, "y": 36, "lado": 95 },
-      "salpicadura": { "archivo": "infrecuentes/salpicadura.png", "etiqueta": "Salpicadura", "x": 932, "y": 36, "lado": 99 },
-      "ralentizar": { "archivo": "infrecuentes/ralentizar.png", "etiqueta": "Ralentizar", "x": 1056, "y": 36, "lado": 99 },
-      "quemadura": { "archivo": "infrecuentes/quemadura.png", "etiqueta": "Quemadura", "x": 1175, "y": 37, "lado": 98 },
-      "saqueo": { "archivo": "infrecuentes/saqueo.png", "etiqueta": "Saqueo", "x": 1293, "y": 36, "lado": 98 },
-      "evasion": { "archivo": "infrecuentes/evasion.png", "etiqueta": "Evasión", "x": 1413, "y": 36, "lado": 98 }
+      "perforacion": { "archivo": "infrecuentes/perforacion.png", "etiqueta": "Perforación", "x": 814, "y": 36, "lado": 95, "perk": ["sobrepenetracion"], "match": "exacto" },
+      "salpicadura": { "archivo": "infrecuentes/salpicadura.png", "etiqueta": "Salpicadura", "x": 932, "y": 36, "lado": 99, "perk": ["ondaExpansiva"], "match": "exacto" },
+      "ralentizar": { "archivo": "infrecuentes/ralentizar.png", "etiqueta": "Ralentizar", "x": 1056, "y": 36, "lado": 99, "perk": ["escarcha"], "match": "exacto" },
+      "quemadura": { "archivo": "infrecuentes/quemadura.png", "etiqueta": "Quemadura", "x": 1175, "y": 37, "lado": 98, "perk": ["tormentaDeFuego"], "match": "exacto" },
+      "saqueo": { "archivo": "infrecuentes/saqueo.png", "etiqueta": "Saqueo", "x": 1293, "y": 36, "lado": 98, "perk": ["saqueo"], "match": "exacto" },
+      "evasion": { "archivo": "infrecuentes/evasion.png", "etiqueta": "Evasión", "x": 1413, "y": 36, "lado": 98, "uso": "npcAtacante" }
     },
     // PERKS RAROS (AZUL)
     "raros": {
-      "concentracion": { "archivo": "raros/concentracion.png", "etiqueta": "Concentración", "x": 21, "y": 213, "lado": 90 },
-      "oportunista": { "archivo": "raros/oportunista.png", "etiqueta": "Oportunista", "x": 119, "y": 209, "lado": 94 },
-      "fortificacion": { "archivo": "raros/fortificacion.png", "etiqueta": "Fortificación", "x": 213, "y": 209, "lado": 94 },
-      "aura": { "archivo": "raros/aura.png", "etiqueta": "Aura", "x": 316, "y": 212, "lado": 89 },
-      "inspiracion": { "archivo": "raros/inspiracion.png", "etiqueta": "Inspiración", "x": 412, "y": 212, "lado": 89 },
-      "barrera": { "archivo": "raros/barrera.png", "etiqueta": "Barrera", "x": 503, "y": 209, "lado": 94 },
-      "revitalizar": { "archivo": "raros/revitalizar.png", "etiqueta": "Revitalizar", "x": 600, "y": 212, "lado": 87 },
-      "vinculo": { "archivo": "raros/vinculo.png", "etiqueta": "Vínculo", "x": 695, "y": 209, "lado": 94 }
+      "concentracion": { "archivo": "raros/concentracion.png", "etiqueta": "Concentración", "x": 21, "y": 213, "lado": 90, "perk": ["marcaDeCaza"], "match": "aproximado" },
+      "oportunista": { "archivo": "raros/oportunista.png", "etiqueta": "Oportunista", "x": 119, "y": 209, "lado": 94, "perk": ["oportunista"], "match": "exacto" },
+      "fortificacion": { "archivo": "raros/fortificacion.png", "etiqueta": "Fortificación", "x": 213, "y": 209, "lado": 94, "uso": "libre" },
+      "aura": { "archivo": "raros/aura.png", "etiqueta": "Aura", "x": 316, "y": 212, "lado": 89, "uso": "libre" },
+      "inspiracion": { "archivo": "raros/inspiracion.png", "etiqueta": "Inspiración", "x": 412, "y": 212, "lado": 89, "perk": ["inspiracion"], "match": "exacto" },
+      "barrera": { "archivo": "raros/barrera.png", "etiqueta": "Barrera", "x": 503, "y": 209, "lado": 94, "perk": ["debilidad"], "match": "aproximado" },
+      "revitalizar": { "archivo": "raros/revitalizar.png", "etiqueta": "Revitalizar", "x": 600, "y": 212, "lado": 87, "uso": "libre" },
+      "vinculo": { "archivo": "raros/vinculo.png", "etiqueta": "Vínculo", "x": 695, "y": 209, "lado": 94, "uso": "libre" }
     },
     // PERKS ÉPICOS (MORADO)
     "epicos": {
-      "cadena": { "archivo": "epicos/cadena.png", "etiqueta": "Cadena", "x": 820, "y": 212, "lado": 93 },
-      "dobleDisparo": { "archivo": "epicos/dobleDisparo.png", "etiqueta": "Doble Disparo", "x": 940, "y": 208, "lado": 97 },
-      "explosivo": { "archivo": "epicos/explosivo.png", "etiqueta": "Explosivo", "x": 1058, "y": 210, "lado": 95 },
-      "veneno": { "archivo": "epicos/veneno.png", "etiqueta": "Veneno", "x": 1178, "y": 210, "lado": 93 },
-      "congelar": { "archivo": "epicos/congelar.png", "etiqueta": "Congelar", "x": 1297, "y": 211, "lado": 94 },
-      "sanguinario": { "archivo": "epicos/sanguinario.png", "etiqueta": "Sanguinario", "x": 1416, "y": 208, "lado": 96 }
+      "cadena": { "archivo": "epicos/cadena.png", "etiqueta": "Cadena", "x": 820, "y": 212, "lado": 93, "uso": "libre" },
+      "dobleDisparo": { "archivo": "epicos/dobleDisparo.png", "etiqueta": "Doble Disparo", "x": 940, "y": 208, "lado": 97, "perk": ["perforacion"], "match": "aproximado" },
+      "explosivo": { "archivo": "epicos/explosivo.png", "etiqueta": "Explosivo", "x": 1058, "y": 210, "lado": 95, "perk": ["golpeSismico"], "match": "aproximado" },
+      "veneno": { "archivo": "epicos/veneno.png", "etiqueta": "Veneno", "x": 1178, "y": 210, "lado": 93, "perk": ["envenenar"], "match": "exacto" },
+      "congelar": { "archivo": "epicos/congelar.png", "etiqueta": "Congelar", "x": 1297, "y": 211, "lado": 94, "perk": ["ondaDeFrio"], "match": "exacto" },
+      "sanguinario": { "archivo": "epicos/sanguinario.png", "etiqueta": "Sanguinario", "x": 1416, "y": 208, "lado": 96, "perk": ["hemorragia"], "match": "exacto" }
     },
     // PERKS LEGENDARIOS (DORADO)
     "legendarios": {
-      "ejecutar": { "archivo": "legendarios/ejecutar.png", "etiqueta": "Ejecutar", "x": 18, "y": 384, "lado": 99 },
-      "vampirismo": { "archivo": "legendarios/vampirismo.png", "etiqueta": "Vampirismo", "x": 116, "y": 384, "lado": 99 },
-      "codicia": { "archivo": "legendarios/codicia.png", "etiqueta": "Codicia", "x": 214, "y": 384, "lado": 99 },
-      "tormenta": { "archivo": "legendarios/tormenta.png", "etiqueta": "Tormenta", "x": 312, "y": 384, "lado": 99 },
-      "hiperEnfoque": { "archivo": "legendarios/hiperEnfoque.png", "etiqueta": "Hiper-Enfoque", "x": 410, "y": 384, "lado": 99 },
-      "guardian": { "archivo": "legendarios/guardian.png", "etiqueta": "Guardián", "x": 508, "y": 384, "lado": 99 },
-      "metamorfosis": { "archivo": "legendarios/metamorfosis.png", "etiqueta": "Metamorfosis", "x": 608, "y": 384, "lado": 99 },
-      "ancla": { "archivo": "legendarios/ancla.png", "etiqueta": "Ancla", "x": 706, "y": 384, "lado": 99 }
+      "ejecutar": { "archivo": "legendarios/ejecutar.png", "etiqueta": "Ejecutar", "x": 18, "y": 384, "lado": 99, "perk": ["golpeCertero"], "match": "aproximado" },
+      "vampirismo": { "archivo": "legendarios/vampirismo.png", "etiqueta": "Vampirismo", "x": 116, "y": 384, "lado": 99, "perk": ["terribleHambre"], "match": "exacto" },
+      "codicia": { "archivo": "legendarios/codicia.png", "etiqueta": "Codicia", "x": 214, "y": 384, "lado": 99, "uso": "libre" },
+      "tormenta": { "archivo": "legendarios/tormenta.png", "etiqueta": "Tormenta", "x": 312, "y": 384, "lado": 99, "perk": ["descargaElectrica"], "match": "exacto" },
+      "hiperEnfoque": { "archivo": "legendarios/hiperEnfoque.png", "etiqueta": "Hiper-Enfoque", "x": 410, "y": 384, "lado": 99, "perk": ["concentracion"], "match": "exacto" },
+      "guardian": { "archivo": "legendarios/guardian.png", "etiqueta": "Guardián", "x": 508, "y": 384, "lado": 99, "perk": ["guardiaDelUmbral"], "match": "exacto" },
+      "metamorfosis": { "archivo": "legendarios/metamorfosis.png", "etiqueta": "Metamorfosis", "x": 608, "y": 384, "lado": 99, "uso": "libre" },
+      "ancla": { "archivo": "legendarios/ancla.png", "etiqueta": "Ancla", "x": 706, "y": 384, "lado": 99, "perk": ["raices"], "match": "exacto" }
     },
     // PERKS ÚNICOS / ESPECIALES (ROJO)
     "unicos": {
-      "furia": { "archivo": "unicos/furia.png", "etiqueta": "Furia", "x": 828, "y": 390, "lado": 91 },
-      "eco": { "archivo": "unicos/eco.png", "etiqueta": "Eco", "x": 943, "y": 388, "lado": 94 },
-      "gravedad": { "archivo": "unicos/gravedad.png", "etiqueta": "Gravedad", "x": 1063, "y": 389, "lado": 94 },
-      "resonancia": { "archivo": "unicos/resonancia.png", "etiqueta": "Resonancia", "x": 1182, "y": 388, "lado": 93 },
-      "purificacion": { "archivo": "unicos/purificacion.png", "etiqueta": "Purificación", "x": 1300, "y": 388, "lado": 93 },
-      "dominio": { "archivo": "unicos/dominio.png", "etiqueta": "Dominio", "x": 1418, "y": 386, "lado": 93 }
+      "furia": { "archivo": "unicos/furia.png", "etiqueta": "Furia", "x": 828, "y": 390, "lado": 91, "perk": ["apocalipsis"], "match": "aproximado" },
+      "eco": { "archivo": "unicos/eco.png", "etiqueta": "Eco", "x": 943, "y": 388, "lado": 94, "perk": ["ecoArcano"], "match": "exacto" },
+      "gravedad": { "archivo": "unicos/gravedad.png", "etiqueta": "Gravedad", "x": 1063, "y": 389, "lado": 94, "perk": ["ceguera"], "match": "aproximado" },
+      "resonancia": { "archivo": "unicos/resonancia.png", "etiqueta": "Resonancia", "x": 1182, "y": 388, "lado": 93, "perk": ["tormentaDivina"], "match": "aproximado" },
+      "purificacion": { "archivo": "unicos/purificacion.png", "etiqueta": "Purificación", "x": 1300, "y": 388, "lado": 93, "perk": ["iraDeDios"], "match": "aproximado" },
+      "dominio": { "archivo": "unicos/dominio.png", "etiqueta": "Dominio", "x": 1418, "y": 386, "lado": 93, "perk": ["fuerza"], "match": "aproximado" }
     },
     // PERKS META / OTROS
     "meta": {
-      "robustez": { "archivo": "meta/robustez.png", "etiqueta": "Robustez", "x": 18, "y": 600, "lado": 104 },
-      "contrataque": { "archivo": "meta/contrataque.png", "etiqueta": "Contrataque", "x": 124, "y": 600, "lado": 104 },
-      "escudoTemporal": { "archivo": "meta/escudoTemporal.png", "etiqueta": "Escudo Temporal", "x": 228, "y": 600, "lado": 104 },
-      "teletransporte": { "archivo": "meta/teletransporte.png", "etiqueta": "Teletransporte", "x": 332, "y": 600, "lado": 104 },
-      "rebote": { "archivo": "meta/rebote.png", "etiqueta": "Rebote", "x": 438, "y": 600, "lado": 104 },
-      "fragmentacion": { "archivo": "meta/fragmentacion.png", "etiqueta": "Fragmentación", "x": 543, "y": 600, "lado": 104 },
-      "sinergia": { "archivo": "meta/sinergia.png", "etiqueta": "Sinergia", "x": 648, "y": 600, "lado": 104 },
-      "ultimoAliento": { "archivo": "meta/ultimoAliento.png", "etiqueta": "Último Aliento", "x": 756, "y": 600, "lado": 104 }
+      "robustez": { "archivo": "meta/robustez.png", "etiqueta": "Robustez", "x": 18, "y": 600, "lado": 104, "uso": "libre" },
+      "contrataque": { "archivo": "meta/contrataque.png", "etiqueta": "Contrataque", "x": 124, "y": 600, "lado": 104, "perk": ["primerImpacto"], "match": "aproximado" },
+      "escudoTemporal": { "archivo": "meta/escudoTemporal.png", "etiqueta": "Escudo Temporal", "x": 228, "y": 600, "lado": 104, "perk": ["preparacion"], "match": "aproximado" },
+      "teletransporte": { "archivo": "meta/teletransporte.png", "etiqueta": "Teletransporte", "x": 332, "y": 600, "lado": 104, "uso": "libre" },
+      "rebote": { "archivo": "meta/rebote.png", "etiqueta": "Rebote", "x": 438, "y": 600, "lado": 104, "perk": ["ricochet"], "match": "exacto" },
+      "fragmentacion": { "archivo": "meta/fragmentacion.png", "etiqueta": "Fragmentación", "x": 543, "y": 600, "lado": 104, "perk": ["quebranto"], "match": "aproximado" },
+      "sinergia": { "archivo": "meta/sinergia.png", "etiqueta": "Sinergia", "x": 648, "y": 600, "lado": 104, "uso": "libre" },
+      "ultimoAliento": { "archivo": "meta/ultimoAliento.png", "etiqueta": "Último Aliento", "x": 756, "y": 600, "lado": 104, "perk": ["invisibilidad"], "match": "exacto" }
     },
     // AURAS / SOPORTE
     "auras": {
-      "auraDeDano": { "archivo": "auras/auraDeDano.png", "etiqueta": "Aura de Daño", "x": 906, "y": 603, "lado": 98 },
-      "auraDeVelocidad": { "archivo": "auras/auraDeVelocidad.png", "etiqueta": "Aura de Velocdad", "x": 1009, "y": 603, "lado": 98 },
-      "auraDeArmadura": { "archivo": "auras/auraDeArmadura.png", "etiqueta": "Aura de Armadura", "x": 1112, "y": 604, "lado": 97 },
-      "auraDeRegeneracion": { "archivo": "auras/auraDeRegeneracion.png", "etiqueta": "Aura de Regeneración", "x": 1214, "y": 603, "lado": 98 },
-      "auraDeOro": { "archivo": "auras/auraDeOro.png", "etiqueta": "Aura de Oro", "x": 1316, "y": 603, "lado": 98 },
-      "auraDeRango": { "archivo": "auras/auraDeRango.png", "etiqueta": "Aura de Rango", "x": 1419, "y": 603, "lado": 98 }
+      "auraDeDano": { "archivo": "auras/auraDeDano.png", "etiqueta": "Aura de Daño", "x": 906, "y": 603, "lado": 98, "uso": "libre" },
+      "auraDeVelocidad": { "archivo": "auras/auraDeVelocidad.png", "etiqueta": "Aura de Velocdad", "x": 1009, "y": 603, "lado": 98, "uso": "libre" },
+      "auraDeArmadura": { "archivo": "auras/auraDeArmadura.png", "etiqueta": "Aura de Armadura", "x": 1112, "y": 604, "lado": 97, "uso": "libre" },
+      "auraDeRegeneracion": { "archivo": "auras/auraDeRegeneracion.png", "etiqueta": "Aura de Regeneración", "x": 1214, "y": 603, "lado": 98, "uso": "libre" },
+      "auraDeOro": { "archivo": "auras/auraDeOro.png", "etiqueta": "Aura de Oro", "x": 1316, "y": 603, "lado": 98, "uso": "libre" },
+      "auraDeRango": { "archivo": "auras/auraDeRango.png", "etiqueta": "Aura de Rango", "x": 1419, "y": 603, "lado": 98, "uso": "libre" }
     },
     // OVERLAYS / MARCADORES (opcionales)
     "overlays": {
-      "stack": { "archivo": "overlays/stack.png", "etiqueta": "Stack", "x": 22, "y": 840, "lado": 63 },
-      "mejora": { "archivo": "overlays/mejora.png", "etiqueta": "Mejora", "x": 114, "y": 838, "lado": 68 },
-      "temporal": { "archivo": "overlays/temporal.png", "etiqueta": "Temp.", "x": 204, "y": 830, "lado": 85 },
-      "area": { "archivo": "overlays/area.png", "etiqueta": "Área", "x": 312, "y": 821, "lado": 68 },
-      "aura": { "archivo": "overlays/aura.png", "etiqueta": "Aura", "x": 407, "y": 839, "lado": 66 },
-      "pasivo": { "archivo": "overlays/pasivo.png", "etiqueta": "Pasivo", "x": 506, "y": 840, "lado": 68 }
+      "stack": { "archivo": "overlays/stack.png", "etiqueta": "Stack", "x": 22, "y": 840, "lado": 63, "uso": "decoracion" },
+      "mejora": { "archivo": "overlays/mejora.png", "etiqueta": "Mejora", "x": 114, "y": 838, "lado": 68, "uso": "decoracion" },
+      "temporal": { "archivo": "overlays/temporal.png", "etiqueta": "Temp.", "x": 204, "y": 830, "lado": 85, "uso": "decoracion" },
+      "area": { "archivo": "overlays/area.png", "etiqueta": "Área", "x": 312, "y": 821, "lado": 68, "uso": "decoracion" },
+      "aura": { "archivo": "overlays/aura.png", "etiqueta": "Aura", "x": 407, "y": 839, "lado": 66, "uso": "decoracion" },
+      "pasivo": { "archivo": "overlays/pasivo.png", "etiqueta": "Pasivo", "x": 506, "y": 840, "lado": 68, "uso": "decoracion" }
     },
     // FONDOS POR RAREZA
     "fondos": {
-      "comun": { "archivo": "fondos/comun.png", "etiqueta": "Común", "x": 628, "y": 830, "lado": 83 },
-      "infrecuente": { "archivo": "fondos/infrecuente.png", "etiqueta": "Infrecuente", "x": 734, "y": 830, "lado": 84 },
-      "raro": { "archivo": "fondos/raro.png", "etiqueta": "Raro", "x": 842, "y": 830, "lado": 84 },
-      "epico": { "archivo": "fondos/epico.png", "etiqueta": "Épico", "x": 948, "y": 830, "lado": 84 },
-      "legendario": { "archivo": "fondos/legendario.png", "etiqueta": "Legendario", "x": 1058, "y": 830, "lado": 84 },
-      "unico": { "archivo": "fondos/unico.png", "etiqueta": "Único", "x": 1164, "y": 830, "lado": 84 }
+      "comun": { "archivo": "fondos/comun.png", "etiqueta": "Común", "x": 628, "y": 830, "lado": 83, "uso": "decoracion" },
+      "infrecuente": { "archivo": "fondos/infrecuente.png", "etiqueta": "Infrecuente", "x": 734, "y": 830, "lado": 84, "uso": "decoracion" },
+      "raro": { "archivo": "fondos/raro.png", "etiqueta": "Raro", "x": 842, "y": 830, "lado": 84, "uso": "decoracion" },
+      "epico": { "archivo": "fondos/epico.png", "etiqueta": "Épico", "x": 948, "y": 830, "lado": 84, "uso": "decoracion" },
+      "legendario": { "archivo": "fondos/legendario.png", "etiqueta": "Legendario", "x": 1058, "y": 830, "lado": 84, "uso": "decoracion" },
+      "unico": { "archivo": "fondos/unico.png", "etiqueta": "Único", "x": 1164, "y": 830, "lado": 84, "uso": "decoracion" }
     },
     // EJEMPLO EQUIPADO
     "ejemplo": {
-      "equipado": { "archivo": "ejemplo/equipado.png", "etiqueta": "Ejemplo equipado", "x": 1351, "y": 829, "lado": 110 }
+      "equipado": { "archivo": "ejemplo/equipado.png", "etiqueta": "Ejemplo equipado", "x": 1351, "y": 829, "lado": 110, "uso": "decoracion" }
     }
+  },
+
+  // Lo mismo al revés, que es como lo consulta CargadorIconos: entra la key del
+  // perk, sale el archivo. Ordenado por el "id" de perks.json de menor a mayor,
+  // que es como se ve de un vistazo si falta uno. El 25 no está y no es un
+  // olvido: quedó libre al borrarse «misilMagico».
+  "porPerk": {
+    "filo": { "archivo": "comunes/dano.png", "match": "exacto", "nota": "La espada del póster es el icono de daño." },
+    "pulso": { "archivo": "comunes/cadencia.png", "match": "exacto" },
+    "vista": { "archivo": "comunes/alcance.png", "match": "exacto" },
+    "temple": { "archivo": "comunes/dano.png", "match": "compartido" },
+    "reflejos": { "archivo": "comunes/cadencia.png", "match": "compartido" },
+    "punteria": { "archivo": "comunes/precision.png", "match": "exacto", "nota": "La mira gris, la segunda variante de alcance." },
+    "empunadura": { "archivo": "comunes/dano.png", "match": "compartido" },
+    "muneca": { "archivo": "comunes/cadencia.png", "match": "compartido" },
+    "furia": { "archivo": "comunes/dano.png", "match": "compartido", "nota": "El diablo del póster se llama igual, pero es demasiado para un silver de +35: se lo lleva el unique apocalipsis." },
+    "celeridad": { "archivo": "comunes/cadencia.png", "match": "compartido" },
+    "halcon": { "archivo": "comunes/alcance.png", "match": "compartido" },
+    "sana": { "archivo": "comunes/dano.png", "match": "compartido" },
+    "frenesi": { "archivo": "comunes/cadencia.png", "match": "compartido" },
+    "ojoDeAguila": { "archivo": "comunes/precision.png", "match": "compartido" },
+    "ira": { "archivo": "comunes/dano.png", "match": "compartido" },
+    "vendaval": { "archivo": "comunes/cadencia.png", "match": "compartido" },
+    "ricochet": { "archivo": "meta/rebote.png", "match": "exacto" },
+    "ondaExpansiva": { "archivo": "infrecuentes/salpicadura.png", "match": "exacto" },
+    "escarcha": { "archivo": "infrecuentes/ralentizar.png", "match": "exacto", "nota": "El copo de nieve. El marco es verde y el perk es gold: acá manda el dibujo, no el color." },
+    "golpeCertero": { "archivo": "legendarios/ejecutar.png", "match": "aproximado", "nota": "La calavera atravesada lee como golpe letal. Ejecutar como mecánica no existe en el juego." },
+    "descargaElectrica": { "archivo": "legendarios/tormenta.png", "match": "exacto", "nota": "El rayo." },
+    "tormentaDeFuego": { "archivo": "infrecuentes/quemadura.png", "match": "exacto" },
+    "envenenar": { "archivo": "epicos/veneno.png", "match": "exacto" },
+    "debilidad": { "archivo": "raros/barrera.png", "match": "aproximado", "nota": "Weaken baja el daño que el enemigo le hace a la Torre: el escudo azul es lo defensivo que había." },
+    "quebranto": { "archivo": "meta/fragmentacion.png", "match": "aproximado", "nota": "Sunder rompe la resistencia. No hay icono de armadura partida; fragmentar es lo más cerca." },
+    "perforacion": { "archivo": "epicos/dobleDisparo.png", "match": "aproximado", "nota": "La flecha perforante se la queda su componente gold (sobrepenetracion). Al unique le toca la doble flecha." },
+    "ondaDeFrio": { "archivo": "epicos/congelar.png", "match": "exacto", "nota": "Los cristales de hielo: splash + slow, que es exactamente la receta." },
+    "iraDeDios": { "archivo": "unicos/purificacion.png", "match": "aproximado", "nota": "El sol dorado, lo más divino del póster." },
+    "apocalipsis": { "archivo": "unicos/furia.png", "match": "aproximado", "nota": "El diablo rojo. Hemorragia + remate." },
+    "terribleHambre": { "archivo": "legendarios/vampirismo.png", "match": "exacto", "nota": "Las fauces. El nombre lo pide." },
+    "tormentaDivina": { "archivo": "unicos/resonancia.png", "match": "aproximado", "nota": "Clave de sol sobre halo: el Clérigo con aura de cadencia." },
+    "ceguera": { "archivo": "unicos/gravedad.png", "match": "aproximado", "nota": "El agujero negro es lo más parecido a cegar que hay dibujado." },
+    "fuerza": { "archivo": "unicos/dominio.png", "match": "aproximado", "nota": "La corona. Empujón + vulnerable del Guerrero, sin icono propio." },
+    "invisibilidad": { "archivo": "meta/ultimoAliento.png", "match": "exacto", "nota": "El fantasma. No hace falta explicarlo." },
+    "concentracion": { "archivo": "legendarios/hiperEnfoque.png", "match": "exacto", "nota": "La diana concéntrica: Focus, stacks al mismo objetivo." },
+    "marcaDeCaza": { "archivo": "raros/concentracion.png", "match": "aproximado", "nota": "La diana roja marca un objetivo, que es lo que hace HuntMark." },
+    "hemorragia": { "archivo": "epicos/sanguinario.png", "match": "exacto", "nota": "La gota de sangre." },
+    "raices": { "archivo": "legendarios/ancla.png", "match": "exacto", "nota": "El ancla: inmovilizar." },
+    "golpeSismico": { "archivo": "epicos/explosivo.png", "match": "aproximado", "nota": "El estallido naranja lee como onda que empuja." },
+    "inspiracion": { "archivo": "raros/inspiracion.png", "match": "exacto" },
+    "saqueo": { "archivo": "infrecuentes/saqueo.png", "match": "exacto" },
+    "oportunista": { "archivo": "raros/oportunista.png", "match": "exacto" },
+    "guardiaDelUmbral": { "archivo": "legendarios/guardian.png", "match": "exacto" },
+    "ecoArcano": { "archivo": "unicos/eco.png", "match": "exacto" },
+    "sobrepenetracion": { "archivo": "infrecuentes/perforacion.png", "match": "exacto", "nota": "La flecha que atraviesa. ⚠ El icono se llama «perforacion» y el perk que lo usa se llama «sobrepenetracion»: el perk «perforacion» es el unique y usa otro." },
+    "primerImpacto": { "archivo": "meta/contrataque.png", "match": "aproximado", "nota": "El impacto con chispas. Contraataque como mecánica no existe." },
+    "preparacion": { "archivo": "meta/escudoTemporal.png", "match": "aproximado", "nota": "El reloj de arena: Charge acumula mientras no hay a quién pegarle." }
   }
 }
