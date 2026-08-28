@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "fuente": "img perks grilla.png",
+  "_fuente": "La lámina entera que entregó el diseñador, 1536x1024. Es el ORIGINAL: los recortes de las subcarpetas salen de acá y se pueden volver a generar. No borrarla.",
+  "_recorte": "Cada icono se recortó cuadrado, centrado en el marco y con el resplandor incluido. `x`, `y` y `lado` son las coordenadas dentro de la lámina, en píxeles. El lado varía por sección porque el resplandor no mide lo mismo en todas.",
+  "_etiqueta": "El texto que la lámina trae escrito debajo del icono, tal cual. Dos vienen con errata del diseñador: `contrataque` («Contrataque») y `auraDeVelocidad` («Aura de Velocdad»). El texto que se muestra al jugador NO sale de acá: sale de Client\\Datos\\lang\\.",
+  "_pendiente": "Estos iconos NO están mapeados todavía a los 47 perks de Client\\Datos\\perks.json. La lámina usa seis rarezas (común/infrecuente/raro/épico/legendario/único) y el juego usa cuatro tiers (bronze/silver/gold/unique), y los nombres coinciden solo en parte. El mapeo es una decisión de diseño, no de importación.",
+  "secciones": {
+    // PERKS COMUNES (GRIS)
+    "comunes": {
+      "dano": { "archivo": "comunes/dano.png", "etiqueta": "Daño +", "x": 20, "y": 42, "lado": 80 },
+      "cadencia": { "archivo": "comunes/cadencia.png", "etiqueta": "Cadencia +", "x": 116, "y": 46, "lado": 79 },
+      "alcance": { "archivo": "comunes/alcance.png", "etiqueta": "Alcance +", "x": 211, "y": 43, "lado": 82 },
+      "vida": { "archivo": "comunes/vida.png", "etiqueta": "Vida +", "x": 309, "y": 43, "lado": 82 },
+      "armadura": { "archivo": "comunes/armadura.png", "etiqueta": "Armadura +", "x": 403, "y": 43, "lado": 82 },
+      "oro": { "archivo": "comunes/oro.png", "etiqueta": "Oro +", "x": 497, "y": 43, "lado": 82 },
+      "regeneracion": { "archivo": "comunes/regeneracion.png", "etiqueta": "Regeneración", "x": 591, "y": 43, "lado": 82 },
+      "precision": { "archivo": "comunes/precision.png", "etiqueta": "Precisión +", "x": 686, "y": 43, "lado": 82 }
+    },
+    // PERKS INFRECUENTES (VERDE)
+    "infrecuentes": {
+      "perforacion": { "archivo": "infrecuentes/perforacion.png", "etiqueta": "Perforación", "x": 814, "y": 36, "lado": 95 },
+      "salpicadura": { "archivo": "infrecuentes/salpicadura.png", "etiqueta": "Salpicadura", "x": 932, "y": 36, "lado": 99 },
+      "ralentizar": { "archivo": "infrecuentes/ralentizar.png", "etiqueta": "Ralentizar", "x": 1056, "y": 36, "lado": 99 },
+      "quemadura": { "archivo": "infrecuentes/quemadura.png", "etiqueta": "Quemadura", "x": 1175, "y": 37, "lado": 98 },
+      "saqueo": { "archivo": "infrecuentes/saqueo.png", "etiqueta": "Saqueo", "x": 1293, "y": 36, "lado": 98 },
+      "evasion": { "archivo": "infrecuentes/evasion.png", "etiqueta": "Evasión", "x": 1413, "y": 36, "lado": 98 }
+    },
+    // PERKS RAROS (AZUL)
+    "raros": {
+      "concentracion": { "archivo": "raros/concentracion.png", "etiqueta": "Concentración", "x": 21, "y": 213, "lado": 90 },
+      "oportunista": { "archivo": "raros/oportunista.png", "etiqueta": "Oportunista", "x": 119, "y": 209, "lado": 94 },
+      "fortificacion": { "archivo": "raros/fortificacion.png", "etiqueta": "Fortificación", "x": 213, "y": 209, "lado": 94 },
+      "aura": { "archivo": "raros/aura.png", "etiqueta": "Aura", "x": 316, "y": 212, "lado": 89 },
+      "inspiracion": { "archivo": "raros/inspiracion.png", "etiqueta": "Inspiración", "x": 412, "y": 212, "lado": 89 },
+      "barrera": { "archivo": "raros/barrera.png", "etiqueta": "Barrera", "x": 503, "y": 209, "lado": 94 },
+      "revitalizar": { "archivo": "raros/revitalizar.png", "etiqueta": "Revitalizar", "x": 600, "y": 212, "lado": 87 },
+      "vinculo": { "archivo": "raros/vinculo.png", "etiqueta": "Vínculo", "x": 695, "y": 209, "lado": 94 }
+    },
+    // PERKS ÉPICOS (MORADO)
+    "epicos": {
+      "cadena": { "archivo": "epicos/cadena.png", "etiqueta": "Cadena", "x": 820, "y": 212, "lado": 93 },
+      "dobleDisparo": { "archivo": "epicos/dobleDisparo.png", "etiqueta": "Doble Disparo", "x": 940, "y": 208, "lado": 97 },
+      "explosivo": { "archivo": "epicos/explosivo.png", "etiqueta": "Explosivo", "x": 1058, "y": 210, "lado": 95 },
+      "veneno": { "archivo": "epicos/veneno.png", "etiqueta": "Veneno", "x": 1178, "y": 210, "lado": 93 },
+      "congelar": { "archivo": "epicos/congelar.png", "etiqueta": "Congelar", "x": 1297, "y": 211, "lado": 94 },
+      "sanguinario": { "archivo": "epicos/sanguinario.png", "etiqueta": "Sanguinario", "x": 1416, "y": 208, "lado": 96 }
+    },
+    // PERKS LEGENDARIOS (DORADO)
+    "legendarios": {
+      "ejecutar": { "archivo": "legendarios/ejecutar.png", "etiqueta": "Ejecutar", "x": 18, "y": 384, "lado": 99 },
+      "vampirismo": { "archivo": "legendarios/vampirismo.png", "etiqueta": "Vampirismo", "x": 116, "y": 384, "lado": 99 },
+      "codicia": { "archivo": "legendarios/codicia.png", "etiqueta": "Codicia", "x": 214, "y": 384, "lado": 99 },
+      "tormenta": { "archivo": "legendarios/tormenta.png", "etiqueta": "Tormenta", "x": 312, "y": 384, "lado": 99 },
+      "hiperEnfoque": { "archivo": "legendarios/hiperEnfoque.png", "etiqueta": "Hiper-Enfoque", "x": 410, "y": 384, "lado": 99 },
+      "guardian": { "archivo": "legendarios/guardian.png", "etiqueta": "Guardián", "x": 508, "y": 384, "lado": 99 },
+      "metamorfosis": { "archivo": "legendarios/metamorfosis.png", "etiqueta": "Metamorfosis", "x": 608, "y": 384, "lado": 99 },
+      "ancla": { "archivo": "legendarios/ancla.png", "etiqueta": "Ancla", "x": 706, "y": 384, "lado": 99 }
+    },
+    // PERKS ÚNICOS / ESPECIALES (ROJO)
+    "unicos": {
+      "furia": { "archivo": "unicos/furia.png", "etiqueta": "Furia", "x": 828, "y": 390, "lado": 91 },
+      "eco": { "archivo": "unicos/eco.png", "etiqueta": "Eco", "x": 943, "y": 388, "lado": 94 },
+      "gravedad": { "archivo": "unicos/gravedad.png", "etiqueta": "Gravedad", "x": 1063, "y": 389, "lado": 94 },
+      "resonancia": { "archivo": "unicos/resonancia.png", "etiqueta": "Resonancia", "x": 1182, "y": 388, "lado": 93 },
+      "purificacion": { "archivo": "unicos/purificacion.png", "etiqueta": "Purificación", "x": 1300, "y": 388, "lado": 93 },
+      "dominio": { "archivo": "unicos/dominio.png", "etiqueta": "Dominio", "x": 1418, "y": 386, "lado": 93 }
+    },
+    // PERKS META / OTROS
+    "meta": {
+      "robustez": { "archivo": "meta/robustez.png", "etiqueta": "Robustez", "x": 18, "y": 600, "lado": 104 },
+      "contrataque": { "archivo": "meta/contrataque.png", "etiqueta": "Contrataque", "x": 124, "y": 600, "lado": 104 },
+      "escudoTemporal": { "archivo": "meta/escudoTemporal.png", "etiqueta": "Escudo Temporal", "x": 228, "y": 600, "lado": 104 },
+      "teletransporte": { "archivo": "meta/teletransporte.png", "etiqueta": "Teletransporte", "x": 332, "y": 600, "lado": 104 },
+      "rebote": { "archivo": "meta/rebote.png", "etiqueta": "Rebote", "x": 438, "y": 600, "lado": 104 },
+      "fragmentacion": { "archivo": "meta/fragmentacion.png", "etiqueta": "Fragmentación", "x": 543, "y": 600, "lado": 104 },
+      "sinergia": { "archivo": "meta/sinergia.png", "etiqueta": "Sinergia", "x": 648, "y": 600, "lado": 104 },
+      "ultimoAliento": { "archivo": "meta/ultimoAliento.png", "etiqueta": "Último Aliento", "x": 756, "y": 600, "lado": 104 }
+    },
+    // AURAS / SOPORTE
+    "auras": {
+      "auraDeDano": { "archivo": "auras/auraDeDano.png", "etiqueta": "Aura de Daño", "x": 906, "y": 603, "lado": 98 },
+      "auraDeVelocidad": { "archivo": "auras/auraDeVelocidad.png", "etiqueta": "Aura de Velocdad", "x": 1009, "y": 603, "lado": 98 },
+      "auraDeArmadura": { "archivo": "auras/auraDeArmadura.png", "etiqueta": "Aura de Armadura", "x": 1112, "y": 604, "lado": 97 },
+      "auraDeRegeneracion": { "archivo": "auras/auraDeRegeneracion.png", "etiqueta": "Aura de Regeneración", "x": 1214, "y": 603, "lado": 98 },
+      "auraDeOro": { "archivo": "auras/auraDeOro.png", "etiqueta": "Aura de Oro", "x": 1316, "y": 603, "lado": 98 },
+      "auraDeRango": { "archivo": "auras/auraDeRango.png", "etiqueta": "Aura de Rango", "x": 1419, "y": 603, "lado": 98 }
+    },
+    // OVERLAYS / MARCADORES (opcionales)
+    "overlays": {
+      "stack": { "archivo": "overlays/stack.png", "etiqueta": "Stack", "x": 22, "y": 840, "lado": 63 },
+      "mejora": { "archivo": "overlays/mejora.png", "etiqueta": "Mejora", "x": 114, "y": 838, "lado": 68 },
+      "temporal": { "archivo": "overlays/temporal.png", "etiqueta": "Temp.", "x": 204, "y": 830, "lado": 85 },
+      "area": { "archivo": "overlays/area.png", "etiqueta": "Área", "x": 312, "y": 821, "lado": 68 },
+      "aura": { "archivo": "overlays/aura.png", "etiqueta": "Aura", "x": 407, "y": 839, "lado": 66 },
+      "pasivo": { "archivo": "overlays/pasivo.png", "etiqueta": "Pasivo", "x": 506, "y": 840, "lado": 68 }
+    },
+    // FONDOS POR RAREZA
+    "fondos": {
+      "comun": { "archivo": "fondos/comun.png", "etiqueta": "Común", "x": 628, "y": 830, "lado": 83 },
+      "infrecuente": { "archivo": "fondos/infrecuente.png", "etiqueta": "Infrecuente", "x": 734, "y": 830, "lado": 84 },
+      "raro": { "archivo": "fondos/raro.png", "etiqueta": "Raro", "x": 842, "y": 830, "lado": 84 },
+      "epico": { "archivo": "fondos/epico.png", "etiqueta": "Épico", "x": 948, "y": 830, "lado": 84 },
+      "legendario": { "archivo": "fondos/legendario.png", "etiqueta": "Legendario", "x": 1058, "y": 830, "lado": 84 },
+      "unico": { "archivo": "fondos/unico.png", "etiqueta": "Único", "x": 1164, "y": 830, "lado": 84 }
+    },
+    // EJEMPLO EQUIPADO
+    "ejemplo": {
+      "equipado": { "archivo": "ejemplo/equipado.png", "etiqueta": "Ejemplo equipado", "x": 1351, "y": 829, "lado": 110 }
+    }
+  }
+}
