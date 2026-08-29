@@ -1,7 +1,7 @@
 # Iconos de perks
 
 Los 69 iconos de la lámina que entregó el diseñador, recortados de a uno y ya
-asignados a los 47 perks de `Client\Datos\perks.json`.
+asignados a los 47 perks de `Client\Data\perks.json`.
 
 La lámina **`img perks grilla.png`** (1536×1024) es el original y no se borra: los
 recortes salen de ahí y se pueden volver a generar en cualquier momento con
@@ -31,9 +31,9 @@ mapeo al revés —entra la `key` del perk, sale el archivo—, y está ordenado
 de `perks.json` de menor a mayor, que es como se ve de un vistazo si falta uno. El 25 no
 está y no es un olvido: quedó libre al borrarse «misilMagico».
 
-⚠ **`iconos.json` lo lee el juego.** `Client\Scripts\CargadorIconos.cs` entra por
+⚠ **`iconos.json` lo lee el juego.** `Client\Scripts\IconLoader.cs` entra por
 `porPerk`, saca la ruta del recorte y lo carga de disco —igual que
-`CargadorGraficos.cs` con `graficos.json`—. Dejó de ser papeleo del pipeline de arte:
+`GraphicsLoader.cs` con `graficos.json`—. Dejó de ser papeleo del pipeline de arte:
 si acá se rompe algo, los perks se dibujan sin icono. Se cargan los **recortes**, no la
 lámina; y un perk sin icono no es un error, devuelve `null` y la pantalla sigue con el
 texto de siempre.
@@ -123,7 +123,7 @@ Ninguno. Los 47 resuelven, aunque 16 comparten dibujo y 13 son `aproximado`.
 **texto crudo** de los siete JSON de balance, comentarios incluidos: agregarle un campo
 `icon` a `perks.json` cambiaría el hash y **eso es temporada nueva del ranking**, por una
 decisión puramente cosmética. El icono es presentación, no entrada de la simulación, así
-que vive acá, en `Resources\`, fuera del hash — igual que `Datos\lang\`, por la misma
+que vive acá, en `Resources\`, fuera del hash — igual que `Data\lang\`, por la misma
 razón.
 
 ## Cómo salió el recorte

@@ -2,16 +2,16 @@
   // ---------------------------------------------------------------------------
   //  El índice de los iconos de perk.
   //
-  //  ⚠ ESTE ARCHIVO LO LEE EL JUEGO. Client\Scripts\CargadorIconos.cs entra por
+  //  ⚠ ESTE ARCHIVO LO LEE EL JUEGO. Client\Scripts\IconLoader.cs entra por
   //    el bloque "porPerk" y saca la ruta del recorte. Dejó de ser papeleo del
   //    pipeline de arte: si acá se rompe algo, la mochila se dibuja sin iconos.
   //
   //  ⚠ NO ENTRA AL HASH DE /run/start, y esa es la razón de que viva en
-  //    Resources\ y no en Client\Datos\. El hash cubre el TEXTO CRUDO de los
+  //    Resources\ y no en Client\Data\. El hash cubre el TEXTO CRUDO de los
   //    siete JSON de balance, comentarios incluidos: meterle un campo "icon" a
   //    perks.json cambiaría el hash, y eso es TEMPORADA NUEVA del ranking por
   //    una decisión puramente cosmética. El icono es presentación, no entrada de
-  //    la simulación — igual que Datos\lang\, y por la misma razón.
+  //    la simulación — igual que Data\lang\, y por la misma razón.
   //    perks.json NO SE TOCA por esto.
   //
   //  ⚠ EL COLOR DEL MARCO NO ES EL TIER. La lámina trae seis rarezas y el juego
@@ -25,7 +25,7 @@
   //    eran siete strings falsos ("_fuente", "_match", "_color"...) que el
   //    parser tenía que leer y descartar: son datos que fingen ser prosa. La
   //    convención del proyecto es el comentario de verdad, igual que en
-  //    Client\Datos\*.json, y los dos lectores lo toleran — el juego con
+  //    Client\Data\*.json, y los dos lectores lo toleran — el juego con
   //    JsonCommentHandling.Skip y recortar.ps1 sacando las líneas que empiezan
   //    con "//" antes de ConvertFrom-Json.
   //    ⚠ POR ESO NO HAY COMENTARIOS AL FINAL DE UNA LÍNEA CON DATOS: recortar.ps1
@@ -47,14 +47,14 @@
   //
   //  "etiqueta" Lo que la lámina trae escrito debajo del icono. Es la etiqueta
   //             DEL DISEÑADOR, no un texto del jugador: los nombres que se ven
-  //             en pantalla salen de Client\Datos\lang\. Dos vienen con errata
+  //             en pantalla salen de Client\Data\lang\. Dos vienen con errata
   //             y se conservan tal cual —«Contrataque» y «Aura de Velocdad»—
   //             porque los nombres de archivo salieron de ahí.
   //
   //  "archivo"  El recorte, relativo a esta carpeta. Con "/" y no "\": es la ruta
   //             que consume Godot.
   //
-  //  "perk"     Las keys de Client\Datos\perks.json que usan este dibujo. Es un
+  //  "perk"     Las keys de Client\Data\perks.json que usan este dibujo. Es un
   //             ARRAY porque los perks numéricos comparten icono: filo, temple,
   //             empunadura, furia, sana e ira son todos +daño y el póster tiene
   //             una sola espada.
@@ -184,7 +184,7 @@
     }
   },
 
-  // Lo mismo al revés, que es como lo consulta CargadorIconos: entra la key del
+  // Lo mismo al revés, que es como lo consulta IconLoader: entra la key del
   // perk, sale el archivo. Ordenado por el "id" de perks.json de menor a mayor,
   // que es como se ve de un vistazo si falta uno. El 25 no está y no es un
   // olvido: quedó libre al borrarse «misilMagico».

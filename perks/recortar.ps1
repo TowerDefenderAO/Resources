@@ -14,7 +14,7 @@ $raiz    = Split-Path -Parent $MyInvocation.MyCommand.Path
 $indice  = Join-Path $raiz "iconos.json"
 if (-not (Test-Path $indice)) { throw "falta iconos.json en $raiz" }
 
-# El JSON lleva comentarios `//`, igual que los de Client\Datos\. ConvertFrom-Json de
+# El JSON lleva comentarios `//`, igual que los de Client\Data\. ConvertFrom-Json de
 # PS 5.1 no los tolera, así que se sacan antes (solo los de línea entera, que son los
 # únicos que hay).
 $texto = [System.IO.File]::ReadAllText($indice, [System.Text.Encoding]::UTF8)

@@ -1,9 +1,9 @@
 {
   // `perks\iconos.json` lleva comentarios A PROPÓSITO: el porqué de cada match
   // entre dibujo y perk vive al lado del match, igual que en los datos de balance
-  // de `Client\Datos\` (DATOS.md §4).
+  // de `Client\Data\` (DATOS.md §4).
   //
-  // Los dos que lo leen los toleran —`CargadorIconos.cs` con
+  // Los dos que lo leen los toleran —`IconLoader.cs` con
   // `JsonCommentHandling.Skip`, y `recortar.ps1` sacando las líneas que empiezan
   // con `//` antes de `ConvertFrom-Json`—, así que no molestan a nadie salvo al
   // validador de VS Code, que trata todo `.json` como JSON estricto y marca
