@@ -4,7 +4,7 @@
   "_escala": "x4 y una sola. Austral arrastra tres escalas a la vez (1x en Graficos.ind, x4 en las hojas HD, x2 en la variante classic). Aca se fija UNA, x4, y todas las coordenadas de este archivo ya estan en ese espacio.",
   "_numeracion": "Los fileNum arrancan en 1 y son consecutivos. NO son los de Austral: la hoja 12137 de alla puede ser la 21 de aca. El numero de origen queda en `origen`, que es la trazabilidad y ademas lo que permite ver que dos items comparten grafico.",
   "_regiones": "Un grafico animado lleva `regiones`: un [x,y,w,h] por cuadro. Los x/y/w/h sueltos son los del PRIMER cuadro y estan siempre, asi que quien solo quiera una imagen fija no mira el array. Los cuadros pueden tener anchos DISTINTOS entre si.",
-  "_direcciones": "1=norte 2=este 3=oeste 4=sur. Las cuatro de una misma pieza suelen vivir en la MISMA hoja, en bandas horizontales, asi que traer las cuatro cuesta lo mismo que traer una.",
+  "_direcciones": "1=norte 2=este 3=SUR 4=OESTE, que es el eHeading de AO (NORTH=1, EAST=2, SOUTH=3, WEST=4, confirmado en Constants.cs del server de Austral). Las cuatro de una misma pieza suelen vivir en la MISMA hoja, en bandas horizontales, asi que traer las cuatro cuesta lo mismo que traer una.",
   "graficos": {
     "item.armaduraDeCuero": {
       "fileNum": 1,
@@ -285,7 +285,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=625 «Vara de fresno» anim=16 dir=este grh=14181 hoja=10060"
     },
-    "arma.varaDeFresno.oeste": {
+    "arma.varaDeFresno.sur": {
       "fileNum": 21,
       "x": 0,
       "y": 0,
@@ -333,7 +333,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=625 «Vara de fresno» anim=16 dir=oeste grh=14178 hoja=10060"
     },
-    "arma.varaDeFresno.sur": {
+    "arma.varaDeFresno.oeste": {
       "fileNum": 21,
       "x": 0,
       "y": 360,
@@ -465,7 +465,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=624 «Bastón nudoso» anim=17 dir=este grh=14207 hoja=10062"
     },
-    "arma.bastonNudoso.oeste": {
+    "arma.bastonNudoso.sur": {
       "fileNum": 22,
       "x": 0,
       "y": 0,
@@ -513,7 +513,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=624 «Bastón nudoso» anim=17 dir=oeste grh=14204 hoja=10062"
     },
-    "arma.bastonNudoso.sur": {
+    "arma.bastonNudoso.oeste": {
       "fileNum": 22,
       "x": 0,
       "y": 360,
@@ -645,7 +645,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=623 «Báculo Engarzada» anim=15 dir=este grh=14155 hoja=10064"
     },
-    "arma.baculoEngarzada.oeste": {
+    "arma.baculoEngarzada.sur": {
       "fileNum": 23,
       "x": 0,
       "y": 0,
@@ -693,7 +693,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=623 «Báculo Engarzada» anim=15 dir=oeste grh=14152 hoja=10064"
     },
-    "arma.baculoEngarzada.sur": {
+    "arma.baculoEngarzada.oeste": {
       "fileNum": 23,
       "x": 0,
       "y": 360,
@@ -813,7 +813,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=159 «Hacha de bárbaro» anim=22 dir=este grh=4863 hoja=10053"
     },
-    "arma.hachaDeBarbaro.oeste": {
+    "arma.hachaDeBarbaro.sur": {
       "fileNum": 24,
       "x": 0,
       "y": 0,
@@ -861,7 +861,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=159 «Hacha de bárbaro» anim=22 dir=oeste grh=4860 hoja=10053"
     },
-    "arma.hachaDeBarbaro.sur": {
+    "arma.hachaDeBarbaro.oeste": {
       "fileNum": 24,
       "x": 0,
       "y": 360,
@@ -981,7 +981,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=129 «Hacha de guerra dos filos» anim=14 dir=este grh=14025 hoja=10109"
     },
-    "arma.hachaDeGuerraDosFilos.oeste": {
+    "arma.hachaDeGuerraDosFilos.sur": {
       "fileNum": 25,
       "x": 0,
       "y": 0,
@@ -1029,7 +1029,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=129 «Hacha de guerra dos filos» anim=14 dir=oeste grh=14022 hoja=10109"
     },
-    "arma.hachaDeGuerraDosFilos.sur": {
+    "arma.hachaDeGuerraDosFilos.oeste": {
       "fileNum": 25,
       "x": 0,
       "y": 360,
@@ -1155,7 +1155,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=403 «Espada de plata» anim=11 dir=este grh=1072 hoja=10107"
     },
-    "arma.espadaDePlata.oeste": {
+    "arma.espadaDePlata.sur": {
       "fileNum": 26,
       "x": 0,
       "y": 0,
@@ -1203,7 +1203,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=403 «Espada de plata» anim=11 dir=oeste grh=1069 hoja=10107"
     },
-    "arma.espadaDePlata.sur": {
+    "arma.espadaDePlata.oeste": {
       "fileNum": 26,
       "x": 0,
       "y": 360,
@@ -1323,7 +1323,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=365 «Daga + 2» anim=21 dir=este grh=4837 hoja=10052"
     },
-    "arma.daga2.oeste": {
+    "arma.daga2.sur": {
       "fileNum": 27,
       "x": 0,
       "y": 0,
@@ -1371,7 +1371,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=365 «Daga + 2» anim=21 dir=oeste grh=4834 hoja=10052"
     },
-    "arma.daga2.sur": {
+    "arma.daga2.oeste": {
       "fileNum": 27,
       "x": 0,
       "y": 360,
@@ -1464,7 +1464,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=366 «Daga + 3» anim=10 dir=este grh=1046 hoja=10034"
     },
-    "arma.daga3.oeste": {
+    "arma.daga3.sur": {
       "fileNum": 28,
       "x": 0,
       "y": 0,
@@ -1500,7 +1500,7 @@
       "msPorFrame": 83,
       "origen": "AO obj=366 «Daga + 3» anim=10 dir=oeste grh=1043 (2 cuadros vacíos recortados) hoja=10034"
     },
-    "arma.daga3.sur": {
+    "arma.daga3.oeste": {
       "fileNum": 28,
       "x": 0,
       "y": 360,
@@ -1620,7 +1620,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=367 «Daga + 4» anim=29 dir=este grh=14623 hoja=12153"
     },
-    "arma.daga4.oeste": {
+    "arma.daga4.sur": {
       "fileNum": 29,
       "x": 0,
       "y": 0,
@@ -1668,7 +1668,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=367 «Daga + 4» anim=29 dir=oeste grh=14620 hoja=12153"
     },
-    "arma.daga4.sur": {
+    "arma.daga4.oeste": {
       "fileNum": 29,
       "x": 0,
       "y": 360,
@@ -1800,7 +1800,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=399 «Cimitarra» anim=5 dir=este grh=10297 hoja=719"
     },
-    "arma.cimitarra.oeste": {
+    "arma.cimitarra.sur": {
       "fileNum": 30,
       "x": 0,
       "y": 0,
@@ -1848,7 +1848,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=399 «Cimitarra» anim=5 dir=oeste grh=10294 hoja=719"
     },
-    "arma.cimitarra.sur": {
+    "arma.cimitarra.oeste": {
       "fileNum": 30,
       "x": 0,
       "y": 360,
@@ -1980,7 +1980,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=479 «Arco compuesto» anim=27 dir=este grh=14571 hoja=12137"
     },
-    "arma.arcoCompuesto.oeste": {
+    "arma.arcoCompuesto.sur": {
       "fileNum": 31,
       "x": 0,
       "y": 0,
@@ -2028,7 +2028,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=479 «Arco compuesto» anim=27 dir=oeste grh=14568 hoja=12137"
     },
-    "arma.arcoCompuesto.sur": {
+    "arma.arcoCompuesto.oeste": {
       "fileNum": 31,
       "x": 0,
       "y": 360,
@@ -2160,7 +2160,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=627 «Arco compuesto reforzado» anim=26 dir=este grh=14545 hoja=12136"
     },
-    "arma.arcoCompuestoReforzado.oeste": {
+    "arma.arcoCompuestoReforzado.sur": {
       "fileNum": 32,
       "x": 0,
       "y": 0,
@@ -2208,7 +2208,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=627 «Arco compuesto reforzado» anim=26 dir=oeste grh=14542 hoja=12136"
     },
-    "arma.arcoCompuestoReforzado.sur": {
+    "arma.arcoCompuestoReforzado.oeste": {
       "fileNum": 32,
       "x": 0,
       "y": 360,
@@ -2340,7 +2340,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=628 «Arco de Cazador» anim=25 dir=este grh=14519 hoja=12135"
     },
-    "arma.arcoDeCazador.oeste": {
+    "arma.arcoDeCazador.sur": {
       "fileNum": 33,
       "x": 0,
       "y": 0,
@@ -2388,7 +2388,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=628 «Arco de Cazador» anim=25 dir=oeste grh=14516 hoja=12135"
     },
-    "arma.arcoDeCazador.sur": {
+    "arma.arcoDeCazador.oeste": {
       "fileNum": 33,
       "x": 0,
       "y": 360,
@@ -2520,7 +2520,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=238 «Túnica Azul (H/E/EO-H/M)» ropaje=49 cabeza=(0,-38) dir=este grh=4677 hoja=344"
     },
-    "cuerpo.tunicaAzulHEEoHM.oeste": {
+    "cuerpo.tunicaAzulHEEoHM.sur": {
       "fileNum": 34,
       "x": 0,
       "y": 0,
@@ -2568,7 +2568,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=238 «Túnica Azul (H/E/EO-H/M)» ropaje=49 cabeza=(0,-38) dir=oeste grh=4674 hoja=344"
     },
-    "cuerpo.tunicaAzulHEEoHM.sur": {
+    "cuerpo.tunicaAzulHEEoHM.oeste": {
       "fileNum": 34,
       "x": 0,
       "y": 360,
@@ -2700,7 +2700,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=237 «Tunica de Roja» ropaje=38 cabeza=(0,-38) dir=este grh=4628 hoja=332"
     },
-    "cuerpo.tunicaDeRoja.oeste": {
+    "cuerpo.tunicaDeRoja.sur": {
       "fileNum": 35,
       "x": 0,
       "y": 0,
@@ -2748,7 +2748,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=237 «Tunica de Roja» ropaje=38 cabeza=(0,-38) dir=oeste grh=4625 hoja=332"
     },
-    "cuerpo.tunicaDeRoja.sur": {
+    "cuerpo.tunicaDeRoja.oeste": {
       "fileNum": 35,
       "x": 0,
       "y": 360,
@@ -2880,7 +2880,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=519 «Túnica Legendaria (H/E/EO-M/H)» ropaje=130 cabeza=(0,-38) dir=este grh=11620 hoja=8054"
     },
-    "cuerpo.tunicaLegendariaHEEoMH.oeste": {
+    "cuerpo.tunicaLegendariaHEEoMH.sur": {
       "fileNum": 36,
       "x": 0,
       "y": 0,
@@ -2928,7 +2928,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=519 «Túnica Legendaria (H/E/EO-M/H)» ropaje=130 cabeza=(0,-38) dir=oeste grh=11617 hoja=8054"
     },
-    "cuerpo.tunicaLegendariaHEEoMH.sur": {
+    "cuerpo.tunicaLegendariaHEEoMH.oeste": {
       "fileNum": 36,
       "x": 0,
       "y": 360,
@@ -3060,7 +3060,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=30 «Armadura de cuero» ropaje=22 cabeza=(0,-38) dir=este grh=4580 hoja=320"
     },
-    "cuerpo.armaduraDeCuero.oeste": {
+    "cuerpo.armaduraDeCuero.sur": {
       "fileNum": 37,
       "x": 0,
       "y": 0,
@@ -3108,7 +3108,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=30 «Armadura de cuero» ropaje=22 cabeza=(0,-38) dir=oeste grh=4577 hoja=320"
     },
-    "cuerpo.armaduraDeCuero.sur": {
+    "cuerpo.armaduraDeCuero.oeste": {
       "fileNum": 37,
       "x": 0,
       "y": 360,
@@ -3240,7 +3240,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=359 «Cota de mallas» ropaje=57 cabeza=(0,-38) dir=este grh=4713 hoja=353"
     },
-    "cuerpo.cotaDeMallas.oeste": {
+    "cuerpo.cotaDeMallas.sur": {
       "fileNum": 38,
       "x": 0,
       "y": 0,
@@ -3288,7 +3288,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=359 «Cota de mallas» ropaje=57 cabeza=(0,-38) dir=oeste grh=4710 hoja=353"
     },
-    "cuerpo.cotaDeMallas.sur": {
+    "cuerpo.cotaDeMallas.oeste": {
       "fileNum": 38,
       "x": 0,
       "y": 360,
@@ -3420,7 +3420,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=195 «Armadura de placas completa» ropaje=45 cabeza=(0,-38) dir=este grh=4656 hoja=340"
     },
-    "cuerpo.armaduraDePlacasCompleta.oeste": {
+    "cuerpo.armaduraDePlacasCompleta.sur": {
       "fileNum": 39,
       "x": 0,
       "y": 0,
@@ -3468,7 +3468,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=195 «Armadura de placas completa» ropaje=45 cabeza=(0,-38) dir=oeste grh=4653 hoja=340"
     },
-    "cuerpo.armaduraDePlacasCompleta.sur": {
+    "cuerpo.armaduraDePlacasCompleta.oeste": {
       "fileNum": 39,
       "x": 0,
       "y": 360,
@@ -3600,7 +3600,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=688 «Armadura Klox» ropaje=48 cabeza=(0,-38) dir=este grh=4673 hoja=343"
     },
-    "cuerpo.armaduraKlox.oeste": {
+    "cuerpo.armaduraKlox.sur": {
       "fileNum": 40,
       "x": 0,
       "y": 0,
@@ -3648,7 +3648,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=688 «Armadura Klox» ropaje=48 cabeza=(0,-38) dir=oeste grh=4670 hoja=343"
     },
-    "cuerpo.armaduraKlox.sur": {
+    "cuerpo.armaduraKlox.oeste": {
       "fileNum": 40,
       "x": 0,
       "y": 360,
@@ -3780,7 +3780,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=360 «Armadura de cazador» ropaje=58 cabeza=(0,-38) dir=este grh=4717 hoja=354"
     },
-    "cuerpo.armaduraDeCazador.oeste": {
+    "cuerpo.armaduraDeCazador.sur": {
       "fileNum": 41,
       "x": 0,
       "y": 0,
@@ -3828,7 +3828,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=360 «Armadura de cazador» ropaje=58 cabeza=(0,-38) dir=oeste grh=4714 hoja=354"
     },
-    "cuerpo.armaduraDeCazador.sur": {
+    "cuerpo.armaduraDeCazador.oeste": {
       "fileNum": 41,
       "x": 0,
       "y": 360,
@@ -3888,7 +3888,7 @@
       "frames": 1,
       "origen": "AO cabeza=1 dir=este grh=3001 hoja=207"
     },
-    "cabeza.1.oeste": {
+    "cabeza.1.sur": {
       "fileNum": 42,
       "x": 0,
       "y": 0,
@@ -3897,7 +3897,7 @@
       "frames": 1,
       "origen": "AO cabeza=1 dir=oeste grh=3000 hoja=207"
     },
-    "cabeza.1.sur": {
+    "cabeza.1.oeste": {
       "fileNum": 42,
       "x": 128,
       "y": 0,
@@ -3924,7 +3924,7 @@
       "frames": 1,
       "origen": "AO cabeza=201 dir=este grh=3219 hoja=221"
     },
-    "cabeza.201.oeste": {
+    "cabeza.201.sur": {
       "fileNum": 43,
       "x": 0,
       "y": 0,
@@ -3933,7 +3933,7 @@
       "frames": 1,
       "origen": "AO cabeza=201 dir=oeste grh=3218 hoja=221"
     },
-    "cabeza.201.sur": {
+    "cabeza.201.oeste": {
       "fileNum": 43,
       "x": 128,
       "y": 0,
@@ -4032,7 +4032,7 @@
       "msPorFrame": 55,
       "origen": "AO body=1 raza=humano (alta) cabezaOffset=(0,-152) dir=este grh=4584 hoja=321"
     },
-    "raza.humano.cuerpo.oeste": {
+    "raza.humano.cuerpo.sur": {
       "fileNum": 44,
       "x": 0,
       "y": 0,
@@ -4080,7 +4080,7 @@
       "msPorFrame": 55,
       "origen": "AO body=1 raza=humano (alta) cabezaOffset=(0,-152) dir=oeste grh=4581 hoja=321"
     },
-    "raza.humano.cuerpo.sur": {
+    "raza.humano.cuerpo.oeste": {
       "fileNum": 44,
       "x": 0,
       "y": 360,
@@ -4140,7 +4140,7 @@
       "frames": 1,
       "origen": "AO head=1 raza=humano dir=este grh=3001 hoja=207"
     },
-    "raza.humano.cabeza.oeste": {
+    "raza.humano.cabeza.sur": {
       "fileNum": 42,
       "x": 0,
       "y": 0,
@@ -4149,7 +4149,7 @@
       "frames": 1,
       "origen": "AO head=1 raza=humano dir=oeste grh=3000 hoja=207"
     },
-    "raza.humano.cabeza.sur": {
+    "raza.humano.cabeza.oeste": {
       "fileNum": 42,
       "x": 128,
       "y": 0,
@@ -4248,7 +4248,7 @@
       "msPorFrame": 55,
       "origen": "AO body=2 raza=elfo (alta) cabezaOffset=(0,-152) dir=este grh=4588 hoja=322"
     },
-    "raza.elfo.cuerpo.oeste": {
+    "raza.elfo.cuerpo.sur": {
       "fileNum": 45,
       "x": 0,
       "y": 0,
@@ -4296,7 +4296,7 @@
       "msPorFrame": 55,
       "origen": "AO body=2 raza=elfo (alta) cabezaOffset=(0,-152) dir=oeste grh=4585 hoja=322"
     },
-    "raza.elfo.cuerpo.sur": {
+    "raza.elfo.cuerpo.oeste": {
       "fileNum": 45,
       "x": 0,
       "y": 360,
@@ -4356,7 +4356,7 @@
       "frames": 1,
       "origen": "AO head=102 raza=elfo dir=este grh=3106 hoja=208"
     },
-    "raza.elfo.cabeza.oeste": {
+    "raza.elfo.cabeza.sur": {
       "fileNum": 46,
       "x": 0,
       "y": 0,
@@ -4365,7 +4365,7 @@
       "frames": 1,
       "origen": "AO head=102 raza=elfo dir=oeste grh=3105 hoja=208"
     },
-    "raza.elfo.cabeza.sur": {
+    "raza.elfo.cabeza.oeste": {
       "fileNum": 46,
       "x": 128,
       "y": 0,
@@ -4464,7 +4464,7 @@
       "msPorFrame": 55,
       "origen": "AO body=3 raza=elfoOscuro (alta) cabezaOffset=(0,-152) dir=este grh=4592 hoja=324"
     },
-    "raza.elfoOscuro.cuerpo.oeste": {
+    "raza.elfoOscuro.cuerpo.sur": {
       "fileNum": 47,
       "x": 0,
       "y": 0,
@@ -4512,7 +4512,7 @@
       "msPorFrame": 55,
       "origen": "AO body=3 raza=elfoOscuro (alta) cabezaOffset=(0,-152) dir=oeste grh=4589 hoja=324"
     },
-    "raza.elfoOscuro.cuerpo.sur": {
+    "raza.elfoOscuro.cuerpo.oeste": {
       "fileNum": 47,
       "x": 0,
       "y": 360,
@@ -4572,7 +4572,7 @@
       "frames": 1,
       "origen": "AO head=201 raza=elfoOscuro dir=este grh=3219 hoja=221"
     },
-    "raza.elfoOscuro.cabeza.oeste": {
+    "raza.elfoOscuro.cabeza.sur": {
       "fileNum": 43,
       "x": 0,
       "y": 0,
@@ -4581,7 +4581,7 @@
       "frames": 1,
       "origen": "AO head=201 raza=elfoOscuro dir=oeste grh=3218 hoja=221"
     },
-    "raza.elfoOscuro.cabeza.sur": {
+    "raza.elfoOscuro.cabeza.oeste": {
       "fileNum": 43,
       "x": 128,
       "y": 0,
@@ -4680,7 +4680,7 @@
       "msPorFrame": 55,
       "origen": "AO body=52 raza=enano (baja) cabezaOffset=(0,-112) dir=este grh=4689 hoja=347"
     },
-    "raza.enano.cuerpo.oeste": {
+    "raza.enano.cuerpo.sur": {
       "fileNum": 48,
       "x": 0,
       "y": 0,
@@ -4728,7 +4728,7 @@
       "msPorFrame": 55,
       "origen": "AO body=52 raza=enano (baja) cabezaOffset=(0,-112) dir=oeste grh=4686 hoja=347"
     },
-    "raza.enano.cuerpo.sur": {
+    "raza.enano.cuerpo.oeste": {
       "fileNum": 48,
       "x": 0,
       "y": 360,
@@ -4788,7 +4788,7 @@
       "frames": 1,
       "origen": "AO head=301 raza=enano dir=este grh=13212 hoja=10050"
     },
-    "raza.enano.cabeza.oeste": {
+    "raza.enano.cabeza.sur": {
       "fileNum": 49,
       "x": 0,
       "y": 0,
@@ -4797,7 +4797,7 @@
       "frames": 1,
       "origen": "AO head=301 raza=enano dir=oeste grh=13211 hoja=10050"
     },
-    "raza.enano.cabeza.sur": {
+    "raza.enano.cabeza.oeste": {
       "fileNum": 49,
       "x": 128,
       "y": 0,
@@ -4896,7 +4896,7 @@
       "msPorFrame": 55,
       "origen": "AO body=52 raza=gnomo (baja) cabezaOffset=(0,-112) dir=este grh=4689 hoja=347"
     },
-    "raza.gnomo.cuerpo.oeste": {
+    "raza.gnomo.cuerpo.sur": {
       "fileNum": 48,
       "x": 0,
       "y": 0,
@@ -4944,7 +4944,7 @@
       "msPorFrame": 55,
       "origen": "AO body=52 raza=gnomo (baja) cabezaOffset=(0,-112) dir=oeste grh=4686 hoja=347"
     },
-    "raza.gnomo.cuerpo.sur": {
+    "raza.gnomo.cuerpo.oeste": {
       "fileNum": 48,
       "x": 0,
       "y": 360,
@@ -5004,7 +5004,7 @@
       "frames": 1,
       "origen": "AO head=401 raza=gnomo dir=este grh=4461 hoja=230"
     },
-    "raza.gnomo.cabeza.oeste": {
+    "raza.gnomo.cabeza.sur": {
       "fileNum": 50,
       "x": 0,
       "y": 0,
@@ -5013,7 +5013,7 @@
       "frames": 1,
       "origen": "AO head=401 raza=gnomo dir=oeste grh=4460 hoja=230"
     },
-    "raza.gnomo.cabeza.sur": {
+    "raza.gnomo.cabeza.oeste": {
       "fileNum": 50,
       "x": 128,
       "y": 0,
@@ -5112,7 +5112,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=613 «Armadura de cuero (E/G-H/M)» ropaje=162 parDe=30 dir=este grh=6865 hoja=10114"
     },
-    "cuerpoBajo.armaduraDeCuero.oeste": {
+    "cuerpoBajo.armaduraDeCuero.sur": {
       "fileNum": 51,
       "x": 0,
       "y": 0,
@@ -5160,7 +5160,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=613 «Armadura de cuero (E/G-H/M)» ropaje=162 parDe=30 dir=oeste grh=6862 hoja=10114"
     },
-    "cuerpoBajo.armaduraDeCuero.sur": {
+    "cuerpoBajo.armaduraDeCuero.oeste": {
       "fileNum": 51,
       "x": 0,
       "y": 360,
@@ -5292,7 +5292,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=616 «Cota de mallas (E/G-H/M)» ropaje=158 parDe=359 dir=este grh=968 hoja=10027"
     },
-    "cuerpoBajo.cotaDeMallas.oeste": {
+    "cuerpoBajo.cotaDeMallas.sur": {
       "fileNum": 52,
       "x": 0,
       "y": 0,
@@ -5340,7 +5340,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=616 «Cota de mallas (E/G-H/M)» ropaje=158 parDe=359 dir=oeste grh=965 hoja=10027"
     },
-    "cuerpoBajo.cotaDeMallas.sur": {
+    "cuerpoBajo.cotaDeMallas.oeste": {
       "fileNum": 52,
       "x": 0,
       "y": 360,
@@ -5472,7 +5472,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=243 «Armadura de placas completa (E/G-H/M)» ropaje=54 parDe=195 dir=este grh=4701 hoja=350"
     },
-    "cuerpoBajo.armaduraDePlacasCompleta.oeste": {
+    "cuerpoBajo.armaduraDePlacasCompleta.sur": {
       "fileNum": 53,
       "x": 0,
       "y": 0,
@@ -5520,7 +5520,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=243 «Armadura de placas completa (E/G-H/M)» ropaje=54 parDe=195 dir=oeste grh=4698 hoja=350"
     },
-    "cuerpoBajo.armaduraDePlacasCompleta.sur": {
+    "cuerpoBajo.armaduraDePlacasCompleta.oeste": {
       "fileNum": 53,
       "x": 0,
       "y": 360,
@@ -5652,7 +5652,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=524 «Túnica Roja(G-H/M)» ropaje=135 parDe=237 dir=este grh=11750 hoja=8059"
     },
-    "cuerpoBajo.tunicaDeRoja.oeste": {
+    "cuerpoBajo.tunicaDeRoja.sur": {
       "fileNum": 54,
       "x": 0,
       "y": 0,
@@ -5700,7 +5700,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=524 «Túnica Roja(G-H/M)» ropaje=135 parDe=237 dir=oeste grh=11747 hoja=8059"
     },
-    "cuerpoBajo.tunicaDeRoja.sur": {
+    "cuerpoBajo.tunicaDeRoja.oeste": {
       "fileNum": 54,
       "x": 0,
       "y": 360,
@@ -5832,7 +5832,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=615 «Túnica Legendaria (E/G-H/M)» ropaje=156 parDe=519 dir=este grh=916 hoja=10023"
     },
-    "cuerpoBajo.tunicaLegendariaHEEoMH.oeste": {
+    "cuerpoBajo.tunicaLegendariaHEEoMH.sur": {
       "fileNum": 55,
       "x": 0,
       "y": 0,
@@ -5880,7 +5880,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=615 «Túnica Legendaria (E/G-H/M)» ropaje=156 parDe=519 dir=oeste grh=913 hoja=10023"
     },
-    "cuerpoBajo.tunicaLegendariaHEEoMH.sur": {
+    "cuerpoBajo.tunicaLegendariaHEEoMH.oeste": {
       "fileNum": 55,
       "x": 0,
       "y": 360,
@@ -6012,7 +6012,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=612 «Armadura de cazador (E/G-H/M)» ropaje=157 parDe=360 dir=este grh=942 hoja=10025"
     },
-    "cuerpoBajo.armaduraDeCazador.oeste": {
+    "cuerpoBajo.armaduraDeCazador.sur": {
       "fileNum": 56,
       "x": 0,
       "y": 0,
@@ -6060,7 +6060,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=612 «Armadura de cazador (E/G-H/M)» ropaje=157 parDe=360 dir=oeste grh=939 hoja=10025"
     },
-    "cuerpoBajo.armaduraDeCazador.sur": {
+    "cuerpoBajo.armaduraDeCazador.oeste": {
       "fileNum": 56,
       "x": 0,
       "y": 360,
@@ -6192,7 +6192,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=620 «Túnica gris (E/G-H/M)» ropaje=161 parDe=238 [equivalente: no hay Túnica Azul de raza baja, va la gris] dir=este grh=1154 hoja=10112"
     },
-    "cuerpoBajo.tunicaAzulHEEoHM.oeste": {
+    "cuerpoBajo.tunicaAzulHEEoHM.sur": {
       "fileNum": 57,
       "x": 0,
       "y": 0,
@@ -6240,7 +6240,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=620 «Túnica gris (E/G-H/M)» ropaje=161 parDe=238 [equivalente: no hay Túnica Azul de raza baja, va la gris] dir=oeste grh=1151 hoja=10112"
     },
-    "cuerpoBajo.tunicaAzulHEEoHM.sur": {
+    "cuerpoBajo.tunicaAzulHEEoHM.oeste": {
       "fileNum": 57,
       "x": 0,
       "y": 360,
@@ -6372,7 +6372,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=500 «Armadura Bruñida (E/G-H/M)» ropaje=110 parDe=688 [equivalente: no hay Klox de raza baja, va la Bruñida] dir=este grh=11100 hoja=8034"
     },
-    "cuerpoBajo.armaduraKlox.oeste": {
+    "cuerpoBajo.armaduraKlox.sur": {
       "fileNum": 58,
       "x": 0,
       "y": 0,
@@ -6420,7 +6420,7 @@
       "msPorFrame": 55,
       "origen": "AO obj=500 «Armadura Bruñida (E/G-H/M)» ropaje=110 parDe=688 [equivalente: no hay Klox de raza baja, va la Bruñida] dir=oeste grh=11097 hoja=8034"
     },
-    "cuerpoBajo.armaduraKlox.sur": {
+    "cuerpoBajo.armaduraKlox.oeste": {
       "fileNum": 58,
       "x": 0,
       "y": 360,
@@ -6522,7 +6522,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=0 «Hormiga» área=1 body=70 dir=este grh=4745 hoja=358"
     },
-    "bicho.hormiga.oeste": {
+    "bicho.hormiga.sur": {
       "fileNum": 59,
       "x": 0,
       "y": 0,
@@ -6552,7 +6552,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=0 «Hormiga» área=1 body=70 dir=oeste grh=4742 hoja=358"
     },
-    "bicho.hormiga.sur": {
+    "bicho.hormiga.oeste": {
       "fileNum": 59,
       "x": 0,
       "y": 192,
@@ -6630,7 +6630,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=1 «Murcielago» área=1 body=9 dir=este grh=4535 hoja=304"
     },
-    "bicho.murcielago.oeste": {
+    "bicho.murcielago.sur": {
       "fileNum": 60,
       "x": 0,
       "y": 0,
@@ -6654,7 +6654,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=1 «Murcielago» área=1 body=9 dir=oeste grh=4532 hoja=304"
     },
-    "bicho.murcielago.sur": {
+    "bicho.murcielago.oeste": {
       "fileNum": 60,
       "x": 0,
       "y": 192,
@@ -6798,7 +6798,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=2 «Gallo» área=1 body=5 dir=este grh=4519 hoja=701"
     },
-    "bicho.gallo.oeste": {
+    "bicho.gallo.sur": {
       "fileNum": 61,
       "x": 0,
       "y": 0,
@@ -6858,7 +6858,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=2 «Gallo» área=1 body=5 dir=oeste grh=4516 hoja=701"
     },
-    "bicho.gallo.sur": {
+    "bicho.gallo.oeste": {
       "fileNum": 61,
       "x": 0,
       "y": 248,
@@ -6978,7 +6978,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=3 «Rata» área=1 body=71 dir=este grh=4749 hoja=359"
     },
-    "bicho.rata.oeste": {
+    "bicho.rata.sur": {
       "fileNum": 62,
       "x": 0,
       "y": 0,
@@ -7008,7 +7008,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=3 «Rata» área=1 body=71 dir=oeste grh=4746 hoja=359"
     },
-    "bicho.rata.sur": {
+    "bicho.rata.oeste": {
       "fileNum": 62,
       "x": 0,
       "y": 192,
@@ -7098,7 +7098,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=4 «Serpiente» área=1 body=13 dir=este grh=4551 hoja=308"
     },
-    "bicho.serpiente.oeste": {
+    "bicho.serpiente.sur": {
       "fileNum": 63,
       "x": 0,
       "y": 0,
@@ -7128,7 +7128,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=4 «Serpiente» área=1 body=13 dir=oeste grh=4548 hoja=308"
     },
-    "bicho.serpiente.sur": {
+    "bicho.serpiente.oeste": {
       "fileNum": 63,
       "x": 0,
       "y": 192,
@@ -7206,7 +7206,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=5 «Quark» área=1 body=146 dir=este grh=12031 hoja=8202"
     },
-    "bicho.quark.oeste": {
+    "bicho.quark.sur": {
       "fileNum": 64,
       "x": 0,
       "y": 0,
@@ -7230,7 +7230,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=5 «Quark» área=1 body=146 dir=oeste grh=12028 hoja=8202"
     },
-    "bicho.quark.sur": {
+    "bicho.quark.oeste": {
       "fileNum": 64,
       "x": 0,
       "y": 192,
@@ -7302,7 +7302,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=6 «Cuervo» área=1 body=68 dir=este grh=4737 hoja=356"
     },
-    "bicho.cuervo.oeste": {
+    "bicho.cuervo.sur": {
       "fileNum": 65,
       "x": 0,
       "y": 0,
@@ -7326,7 +7326,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=6 «Cuervo» área=1 body=68 dir=oeste grh=4734 hoja=356"
     },
-    "bicho.cuervo.sur": {
+    "bicho.cuervo.oeste": {
       "fileNum": 65,
       "x": 0,
       "y": 192,
@@ -7470,7 +7470,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=7 «Pato» área=1 body=88 dir=este grh=10505 hoja=751"
     },
-    "bicho.pato.oeste": {
+    "bicho.pato.sur": {
       "fileNum": 66,
       "x": 0,
       "y": 0,
@@ -7530,7 +7530,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=7 «Pato» área=1 body=88 dir=oeste grh=10502 hoja=751"
     },
-    "bicho.pato.sur": {
+    "bicho.pato.oeste": {
       "fileNum": 66,
       "x": 0,
       "y": 248,
@@ -7662,7 +7662,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=8 «Escorpion» área=1 body=51 dir=este grh=4685 hoja=346"
     },
-    "bicho.escorpion.oeste": {
+    "bicho.escorpion.sur": {
       "fileNum": 67,
       "x": 0,
       "y": 0,
@@ -7698,7 +7698,7 @@
       "msPorFrame": 55,
       "origen": "AO npc=8 «Escorpion» área=1 body=51 dir=oeste grh=4682 hoja=346"
     },
-    "bicho.escorpion.sur": {
+    "bicho.escorpion.oeste": {
       "fileNum": 67,
       "x": 0,
       "y": 152,
