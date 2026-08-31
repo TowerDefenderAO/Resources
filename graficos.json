@@ -7,7 +7,7 @@
   "_direcciones": "1=norte 2=este 3=SUR 4=OESTE, que es el eHeading de AO (NORTH=1, EAST=2, SOUTH=3, WEST=4, confirmado en Constants.cs del server de Austral). Las cuatro de una misma pieza suelen vivir en la MISMA hoja, en bandas horizontales, asi que traer las cuatro cuesta lo mismo que traer una.",
   "graficos": {
     "item.armaduraDeCuero": {
-      "fileNum": 8,
+      "fileNum": 5,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -25,7 +25,7 @@
       ]
     },
     "item.hachaDeGuerraDosFilos": {
-      "fileNum": 9,
+      "fileNum": 6,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -43,7 +43,7 @@
       ]
     },
     "item.hachaDeBarbaro": {
-      "fileNum": 10,
+      "fileNum": 7,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -61,7 +61,7 @@
       ]
     },
     "item.armaduraDePlacasCompleta": {
-      "fileNum": 11,
+      "fileNum": 8,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -79,7 +79,7 @@
       ]
     },
     "item.tunicaDeRoja": {
-      "fileNum": 12,
+      "fileNum": 9,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -97,7 +97,7 @@
       ]
     },
     "item.tunicaAzulHEEoHM": {
-      "fileNum": 13,
+      "fileNum": 10,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -115,7 +115,7 @@
       ]
     },
     "item.cotaDeMallas": {
-      "fileNum": 14,
+      "fileNum": 11,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -133,7 +133,7 @@
       ]
     },
     "item.armaduraDeCazador": {
-      "fileNum": 15,
+      "fileNum": 12,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -151,7 +151,7 @@
       ]
     },
     "item.daga2": {
-      "fileNum": 16,
+      "fileNum": 13,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -169,7 +169,7 @@
       ]
     },
     "item.daga3": {
-      "fileNum": 17,
+      "fileNum": 14,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -187,7 +187,7 @@
       ]
     },
     "item.daga4": {
-      "fileNum": 17,
+      "fileNum": 14,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -205,7 +205,7 @@
       ]
     },
     "item.cimitarra": {
-      "fileNum": 18,
+      "fileNum": 15,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -223,7 +223,7 @@
       ]
     },
     "item.espadaDePlata": {
-      "fileNum": 19,
+      "fileNum": 16,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -241,7 +241,7 @@
       ]
     },
     "item.arcoCompuesto": {
-      "fileNum": 20,
+      "fileNum": 17,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -259,7 +259,7 @@
       ]
     },
     "item.tunicaLegendariaHEEoMH": {
-      "fileNum": 21,
+      "fileNum": 18,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -277,7 +277,7 @@
       ]
     },
     "item.baculoEngarzada": {
-      "fileNum": 22,
+      "fileNum": 19,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -295,7 +295,7 @@
       ]
     },
     "item.bastonNudoso": {
-      "fileNum": 23,
+      "fileNum": 20,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -313,7 +313,7 @@
       ]
     },
     "item.varaDeFresno": {
-      "fileNum": 24,
+      "fileNum": 21,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -331,7 +331,7 @@
       ]
     },
     "item.arcoCompuestoReforzado": {
-      "fileNum": 25,
+      "fileNum": 22,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -349,7 +349,7 @@
       ]
     },
     "item.arcoDeCazador": {
-      "fileNum": 26,
+      "fileNum": 23,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -367,7 +367,7 @@
       ]
     },
     "item.armaduraKlox": {
-      "fileNum": 27,
+      "fileNum": 24,
       "x": 2,
       "y": 2,
       "w": 128,
@@ -385,7 +385,7 @@
       ]
     },
     "arma.varaDeFresno.norte": {
-      "fileNum": 28,
+      "fileNum": 25,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -434,7 +434,7 @@
       "escala": 4
     },
     "arma.varaDeFresno.este": {
-      "fileNum": 28,
+      "fileNum": 25,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -477,7 +477,7 @@
       "escala": 4
     },
     "arma.varaDeFresno.sur": {
-      "fileNum": 28,
+      "fileNum": 25,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -526,7 +526,7 @@
       "escala": 4
     },
     "arma.varaDeFresno.oeste": {
-      "fileNum": 28,
+      "fileNum": 25,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -569,7 +569,7 @@
       "escala": 4
     },
     "arma.bastonNudoso.norte": {
-      "fileNum": 29,
+      "fileNum": 26,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -618,7 +618,7 @@
       "escala": 4
     },
     "arma.bastonNudoso.este": {
-      "fileNum": 29,
+      "fileNum": 26,
       "x": 108,
       "y": 374,
       "w": 104,
@@ -661,7 +661,7 @@
       "escala": 4
     },
     "arma.bastonNudoso.sur": {
-      "fileNum": 29,
+      "fileNum": 26,
       "x": 214,
       "y": 188,
       "w": 104,
@@ -710,7 +710,7 @@
       "escala": 4
     },
     "arma.bastonNudoso.oeste": {
-      "fileNum": 29,
+      "fileNum": 26,
       "x": 320,
       "y": 2,
       "w": 96,
@@ -753,7 +753,7 @@
       "escala": 4
     },
     "arma.baculoEngarzada.norte": {
-      "fileNum": 30,
+      "fileNum": 27,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -802,7 +802,7 @@
       "escala": 4
     },
     "arma.baculoEngarzada.este": {
-      "fileNum": 30,
+      "fileNum": 27,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -845,7 +845,7 @@
       "escala": 4
     },
     "arma.baculoEngarzada.sur": {
-      "fileNum": 30,
+      "fileNum": 27,
       "x": 304,
       "y": 188,
       "w": 104,
@@ -894,7 +894,7 @@
       "escala": 4
     },
     "arma.baculoEngarzada.oeste": {
-      "fileNum": 30,
+      "fileNum": 27,
       "x": 312,
       "y": 2,
       "w": 100,
@@ -937,7 +937,7 @@
       "escala": 4
     },
     "arma.hachaDeBarbaro.norte": {
-      "fileNum": 31,
+      "fileNum": 28,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -974,7 +974,7 @@
       "escala": 4
     },
     "arma.hachaDeBarbaro.este": {
-      "fileNum": 31,
+      "fileNum": 28,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -1017,7 +1017,7 @@
       "escala": 4
     },
     "arma.hachaDeBarbaro.sur": {
-      "fileNum": 31,
+      "fileNum": 28,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -1066,7 +1066,7 @@
       "escala": 4
     },
     "arma.hachaDeBarbaro.oeste": {
-      "fileNum": 31,
+      "fileNum": 28,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -1109,7 +1109,7 @@
       "escala": 4
     },
     "arma.hachaDeGuerraDosFilos.norte": {
-      "fileNum": 32,
+      "fileNum": 29,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1146,7 +1146,7 @@
       "escala": 4
     },
     "arma.hachaDeGuerraDosFilos.este": {
-      "fileNum": 32,
+      "fileNum": 29,
       "x": 320,
       "y": 374,
       "w": 104,
@@ -1189,7 +1189,7 @@
       "escala": 4
     },
     "arma.hachaDeGuerraDosFilos.sur": {
-      "fileNum": 32,
+      "fileNum": 29,
       "x": 426,
       "y": 188,
       "w": 104,
@@ -1238,7 +1238,7 @@
       "escala": 4
     },
     "arma.hachaDeGuerraDosFilos.oeste": {
-      "fileNum": 32,
+      "fileNum": 29,
       "x": 214,
       "y": 2,
       "w": 104,
@@ -1281,7 +1281,7 @@
       "escala": 4
     },
     "arma.espadaDePlata.norte": {
-      "fileNum": 33,
+      "fileNum": 30,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1324,7 +1324,7 @@
       "escala": 4
     },
     "arma.espadaDePlata.este": {
-      "fileNum": 33,
+      "fileNum": 30,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -1367,7 +1367,7 @@
       "escala": 4
     },
     "arma.espadaDePlata.sur": {
-      "fileNum": 33,
+      "fileNum": 30,
       "x": 418,
       "y": 188,
       "w": 104,
@@ -1416,7 +1416,7 @@
       "escala": 4
     },
     "arma.espadaDePlata.oeste": {
-      "fileNum": 33,
+      "fileNum": 30,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -1459,7 +1459,7 @@
       "escala": 4
     },
     "arma.daga2.norte": {
-      "fileNum": 34,
+      "fileNum": 31,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1496,7 +1496,7 @@
       "escala": 4
     },
     "arma.daga2.este": {
-      "fileNum": 34,
+      "fileNum": 31,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -1539,7 +1539,7 @@
       "escala": 4
     },
     "arma.daga2.sur": {
-      "fileNum": 34,
+      "fileNum": 31,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -1588,7 +1588,7 @@
       "escala": 4
     },
     "arma.daga2.oeste": {
-      "fileNum": 34,
+      "fileNum": 31,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -1631,7 +1631,7 @@
       "escala": 4
     },
     "arma.daga3.norte": {
-      "fileNum": 35,
+      "fileNum": 32,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1649,7 +1649,7 @@
       ]
     },
     "arma.daga3.este": {
-      "fileNum": 35,
+      "fileNum": 32,
       "x": 108,
       "y": 2,
       "w": 104,
@@ -1692,7 +1692,7 @@
       "escala": 4
     },
     "arma.daga3.sur": {
-      "fileNum": 35,
+      "fileNum": 32,
       "x": 108,
       "y": 188,
       "w": 104,
@@ -1729,7 +1729,7 @@
       "escala": 4
     },
     "arma.daga3.oeste": {
-      "fileNum": 35,
+      "fileNum": 32,
       "x": 2,
       "y": 374,
       "w": 104,
@@ -1772,7 +1772,7 @@
       "escala": 4
     },
     "arma.daga4.norte": {
-      "fileNum": 36,
+      "fileNum": 33,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1809,7 +1809,7 @@
       "escala": 4
     },
     "arma.daga4.este": {
-      "fileNum": 36,
+      "fileNum": 33,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -1852,7 +1852,7 @@
       "escala": 4
     },
     "arma.daga4.sur": {
-      "fileNum": 36,
+      "fileNum": 33,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -1901,7 +1901,7 @@
       "escala": 4
     },
     "arma.daga4.oeste": {
-      "fileNum": 36,
+      "fileNum": 33,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -1944,7 +1944,7 @@
       "escala": 4
     },
     "arma.cimitarra.norte": {
-      "fileNum": 37,
+      "fileNum": 34,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -1993,7 +1993,7 @@
       "escala": 4
     },
     "arma.cimitarra.este": {
-      "fileNum": 37,
+      "fileNum": 34,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -2036,7 +2036,7 @@
       "escala": 4
     },
     "arma.cimitarra.sur": {
-      "fileNum": 37,
+      "fileNum": 34,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -2085,7 +2085,7 @@
       "escala": 4
     },
     "arma.cimitarra.oeste": {
-      "fileNum": 37,
+      "fileNum": 34,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -2128,7 +2128,7 @@
       "escala": 4
     },
     "arma.arcoCompuesto.norte": {
-      "fileNum": 38,
+      "fileNum": 35,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -2177,7 +2177,7 @@
       "escala": 4
     },
     "arma.arcoCompuesto.este": {
-      "fileNum": 38,
+      "fileNum": 35,
       "x": 194,
       "y": 374,
       "w": 104,
@@ -2220,7 +2220,7 @@
       "escala": 4
     },
     "arma.arcoCompuesto.sur": {
-      "fileNum": 38,
+      "fileNum": 35,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -2269,7 +2269,7 @@
       "escala": 4
     },
     "arma.arcoCompuesto.oeste": {
-      "fileNum": 38,
+      "fileNum": 35,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -2312,7 +2312,7 @@
       "escala": 4
     },
     "arma.arcoCompuestoReforzado.norte": {
-      "fileNum": 39,
+      "fileNum": 36,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -2361,7 +2361,7 @@
       "escala": 4
     },
     "arma.arcoCompuestoReforzado.este": {
-      "fileNum": 39,
+      "fileNum": 36,
       "x": 206,
       "y": 374,
       "w": 104,
@@ -2404,7 +2404,7 @@
       "escala": 4
     },
     "arma.arcoCompuestoReforzado.sur": {
-      "fileNum": 39,
+      "fileNum": 36,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -2453,7 +2453,7 @@
       "escala": 4
     },
     "arma.arcoCompuestoReforzado.oeste": {
-      "fileNum": 39,
+      "fileNum": 36,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -2496,7 +2496,7 @@
       "escala": 4
     },
     "arma.arcoDeCazador.norte": {
-      "fileNum": 40,
+      "fileNum": 37,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -2545,7 +2545,7 @@
       "escala": 4
     },
     "arma.arcoDeCazador.este": {
-      "fileNum": 40,
+      "fileNum": 37,
       "x": 210,
       "y": 374,
       "w": 104,
@@ -2588,7 +2588,7 @@
       "escala": 4
     },
     "arma.arcoDeCazador.sur": {
-      "fileNum": 40,
+      "fileNum": 37,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -2637,7 +2637,7 @@
       "escala": 4
     },
     "arma.arcoDeCazador.oeste": {
-      "fileNum": 40,
+      "fileNum": 37,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -2680,7 +2680,7 @@
       "escala": 4
     },
     "cuerpo.tunicaAzulHEEoHM.norte": {
-      "fileNum": 41,
+      "fileNum": 38,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -2729,7 +2729,7 @@
       "escala": 4
     },
     "cuerpo.tunicaAzulHEEoHM.este": {
-      "fileNum": 41,
+      "fileNum": 38,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -2772,7 +2772,7 @@
       "escala": 4
     },
     "cuerpo.tunicaAzulHEEoHM.sur": {
-      "fileNum": 41,
+      "fileNum": 38,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -2821,7 +2821,7 @@
       "escala": 4
     },
     "cuerpo.tunicaAzulHEEoHM.oeste": {
-      "fileNum": 41,
+      "fileNum": 38,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -2864,7 +2864,7 @@
       "escala": 4
     },
     "cuerpo.tunicaDeRoja.norte": {
-      "fileNum": 42,
+      "fileNum": 39,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -2913,7 +2913,7 @@
       "escala": 4
     },
     "cuerpo.tunicaDeRoja.este": {
-      "fileNum": 42,
+      "fileNum": 39,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -2956,7 +2956,7 @@
       "escala": 4
     },
     "cuerpo.tunicaDeRoja.sur": {
-      "fileNum": 42,
+      "fileNum": 39,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3005,7 +3005,7 @@
       "escala": 4
     },
     "cuerpo.tunicaDeRoja.oeste": {
-      "fileNum": 42,
+      "fileNum": 39,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3048,7 +3048,7 @@
       "escala": 4
     },
     "cuerpo.tunicaLegendariaHEEoMH.norte": {
-      "fileNum": 43,
+      "fileNum": 40,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -3097,7 +3097,7 @@
       "escala": 4
     },
     "cuerpo.tunicaLegendariaHEEoMH.este": {
-      "fileNum": 43,
+      "fileNum": 40,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -3140,7 +3140,7 @@
       "escala": 4
     },
     "cuerpo.tunicaLegendariaHEEoMH.sur": {
-      "fileNum": 43,
+      "fileNum": 40,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3189,7 +3189,7 @@
       "escala": 4
     },
     "cuerpo.tunicaLegendariaHEEoMH.oeste": {
-      "fileNum": 43,
+      "fileNum": 40,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3232,7 +3232,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCuero.norte": {
-      "fileNum": 44,
+      "fileNum": 41,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -3281,7 +3281,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCuero.este": {
-      "fileNum": 44,
+      "fileNum": 41,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -3324,7 +3324,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCuero.sur": {
-      "fileNum": 44,
+      "fileNum": 41,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3373,7 +3373,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCuero.oeste": {
-      "fileNum": 44,
+      "fileNum": 41,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3416,7 +3416,7 @@
       "escala": 4
     },
     "cuerpo.cotaDeMallas.norte": {
-      "fileNum": 45,
+      "fileNum": 42,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -3465,7 +3465,7 @@
       "escala": 4
     },
     "cuerpo.cotaDeMallas.este": {
-      "fileNum": 45,
+      "fileNum": 42,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -3508,7 +3508,7 @@
       "escala": 4
     },
     "cuerpo.cotaDeMallas.sur": {
-      "fileNum": 45,
+      "fileNum": 42,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3557,7 +3557,7 @@
       "escala": 4
     },
     "cuerpo.cotaDeMallas.oeste": {
-      "fileNum": 45,
+      "fileNum": 42,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3600,7 +3600,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDePlacasCompleta.norte": {
-      "fileNum": 46,
+      "fileNum": 43,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -3649,7 +3649,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDePlacasCompleta.este": {
-      "fileNum": 46,
+      "fileNum": 43,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -3692,7 +3692,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDePlacasCompleta.sur": {
-      "fileNum": 46,
+      "fileNum": 43,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3741,7 +3741,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDePlacasCompleta.oeste": {
-      "fileNum": 46,
+      "fileNum": 43,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3784,7 +3784,7 @@
       "escala": 4
     },
     "cuerpo.armaduraKlox.norte": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -3833,7 +3833,7 @@
       "escala": 4
     },
     "cuerpo.armaduraKlox.este": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -3876,7 +3876,7 @@
       "escala": 4
     },
     "cuerpo.armaduraKlox.sur": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -3925,7 +3925,7 @@
       "escala": 4
     },
     "cuerpo.armaduraKlox.oeste": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -3968,7 +3968,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCazador.norte": {
-      "fileNum": 48,
+      "fileNum": 45,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -4017,7 +4017,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCazador.este": {
-      "fileNum": 48,
+      "fileNum": 45,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -4060,7 +4060,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCazador.sur": {
-      "fileNum": 48,
+      "fileNum": 45,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -4109,7 +4109,7 @@
       "escala": 4
     },
     "cuerpo.armaduraDeCazador.oeste": {
-      "fileNum": 48,
+      "fileNum": 45,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -4152,7 +4152,7 @@
       "escala": 4
     },
     "cabeza.1.norte": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -4170,7 +4170,7 @@
       ]
     },
     "cabeza.1.este": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -4188,7 +4188,7 @@
       ]
     },
     "cabeza.1.sur": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -4206,7 +4206,7 @@
       ]
     },
     "cabeza.1.oeste": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -4224,7 +4224,7 @@
       ]
     },
     "cabeza.201.norte": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -4242,7 +4242,7 @@
       ]
     },
     "cabeza.201.este": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -4260,7 +4260,7 @@
       ]
     },
     "cabeza.201.sur": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -4278,7 +4278,7 @@
       ]
     },
     "cabeza.201.oeste": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -4296,7 +4296,7 @@
       ]
     },
     "raza.humano.cuerpo.norte": {
-      "fileNum": 51,
+      "fileNum": 48,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -4345,7 +4345,7 @@
       "escala": 4
     },
     "raza.humano.cuerpo.este": {
-      "fileNum": 51,
+      "fileNum": 48,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -4388,7 +4388,7 @@
       "escala": 4
     },
     "raza.humano.cuerpo.sur": {
-      "fileNum": 51,
+      "fileNum": 48,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -4437,7 +4437,7 @@
       "escala": 4
     },
     "raza.humano.cuerpo.oeste": {
-      "fileNum": 51,
+      "fileNum": 48,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -4480,7 +4480,7 @@
       "escala": 4
     },
     "raza.humano.cabeza.norte": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -4498,7 +4498,7 @@
       ]
     },
     "raza.humano.cabeza.este": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -4516,7 +4516,7 @@
       ]
     },
     "raza.humano.cabeza.sur": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -4534,7 +4534,7 @@
       ]
     },
     "raza.humano.cabeza.oeste": {
-      "fileNum": 49,
+      "fileNum": 46,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -4552,7 +4552,7 @@
       ]
     },
     "raza.elfo.cuerpo.norte": {
-      "fileNum": 52,
+      "fileNum": 49,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -4601,7 +4601,7 @@
       "escala": 4
     },
     "raza.elfo.cuerpo.este": {
-      "fileNum": 52,
+      "fileNum": 49,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -4644,7 +4644,7 @@
       "escala": 4
     },
     "raza.elfo.cuerpo.sur": {
-      "fileNum": 52,
+      "fileNum": 49,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -4693,7 +4693,7 @@
       "escala": 4
     },
     "raza.elfo.cuerpo.oeste": {
-      "fileNum": 52,
+      "fileNum": 49,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -4736,7 +4736,7 @@
       "escala": 4
     },
     "raza.elfo.cabeza.norte": {
-      "fileNum": 53,
+      "fileNum": 50,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -4754,7 +4754,7 @@
       ]
     },
     "raza.elfo.cabeza.este": {
-      "fileNum": 53,
+      "fileNum": 50,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -4772,7 +4772,7 @@
       ]
     },
     "raza.elfo.cabeza.sur": {
-      "fileNum": 53,
+      "fileNum": 50,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -4790,7 +4790,7 @@
       ]
     },
     "raza.elfo.cabeza.oeste": {
-      "fileNum": 53,
+      "fileNum": 50,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -4808,7 +4808,7 @@
       ]
     },
     "raza.elfoOscuro.cuerpo.norte": {
-      "fileNum": 54,
+      "fileNum": 51,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -4857,7 +4857,7 @@
       "escala": 4
     },
     "raza.elfoOscuro.cuerpo.este": {
-      "fileNum": 54,
+      "fileNum": 51,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -4900,7 +4900,7 @@
       "escala": 4
     },
     "raza.elfoOscuro.cuerpo.sur": {
-      "fileNum": 54,
+      "fileNum": 51,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -4949,7 +4949,7 @@
       "escala": 4
     },
     "raza.elfoOscuro.cuerpo.oeste": {
-      "fileNum": 54,
+      "fileNum": 51,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -4992,7 +4992,7 @@
       "escala": 4
     },
     "raza.elfoOscuro.cabeza.norte": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -5010,7 +5010,7 @@
       ]
     },
     "raza.elfoOscuro.cabeza.este": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -5028,7 +5028,7 @@
       ]
     },
     "raza.elfoOscuro.cabeza.sur": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -5046,7 +5046,7 @@
       ]
     },
     "raza.elfoOscuro.cabeza.oeste": {
-      "fileNum": 50,
+      "fileNum": 47,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -5064,7 +5064,7 @@
       ]
     },
     "raza.enano.cuerpo.norte": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -5113,7 +5113,7 @@
       "escala": 4
     },
     "raza.enano.cuerpo.este": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -5156,7 +5156,7 @@
       "escala": 4
     },
     "raza.enano.cuerpo.sur": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -5205,7 +5205,7 @@
       "escala": 4
     },
     "raza.enano.cuerpo.oeste": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -5248,7 +5248,7 @@
       "escala": 4
     },
     "raza.enano.cabeza.norte": {
-      "fileNum": 56,
+      "fileNum": 53,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -5266,7 +5266,7 @@
       ]
     },
     "raza.enano.cabeza.este": {
-      "fileNum": 56,
+      "fileNum": 53,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -5284,7 +5284,7 @@
       ]
     },
     "raza.enano.cabeza.sur": {
-      "fileNum": 56,
+      "fileNum": 53,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -5302,7 +5302,7 @@
       ]
     },
     "raza.enano.cabeza.oeste": {
-      "fileNum": 56,
+      "fileNum": 53,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -5320,7 +5320,7 @@
       ]
     },
     "raza.gnomo.cuerpo.norte": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -5369,7 +5369,7 @@
       "escala": 4
     },
     "raza.gnomo.cuerpo.este": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -5412,7 +5412,7 @@
       "escala": 4
     },
     "raza.gnomo.cuerpo.sur": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -5461,7 +5461,7 @@
       "escala": 4
     },
     "raza.gnomo.cuerpo.oeste": {
-      "fileNum": 55,
+      "fileNum": 52,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -5504,7 +5504,7 @@
       "escala": 4
     },
     "raza.gnomo.cabeza.norte": {
-      "fileNum": 57,
+      "fileNum": 54,
       "x": 2,
       "y": 2,
       "w": 64,
@@ -5522,7 +5522,7 @@
       ]
     },
     "raza.gnomo.cabeza.este": {
-      "fileNum": 57,
+      "fileNum": 54,
       "x": 68,
       "y": 2,
       "w": 64,
@@ -5540,7 +5540,7 @@
       ]
     },
     "raza.gnomo.cabeza.sur": {
-      "fileNum": 57,
+      "fileNum": 54,
       "x": 2,
       "y": 68,
       "w": 64,
@@ -5558,7 +5558,7 @@
       ]
     },
     "raza.gnomo.cabeza.oeste": {
-      "fileNum": 57,
+      "fileNum": 54,
       "x": 68,
       "y": 68,
       "w": 64,
@@ -5576,7 +5576,7 @@
       ]
     },
     "cuerpoBajo.armaduraDeCuero.norte": {
-      "fileNum": 58,
+      "fileNum": 55,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -5625,7 +5625,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCuero.este": {
-      "fileNum": 58,
+      "fileNum": 55,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -5668,7 +5668,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCuero.sur": {
-      "fileNum": 58,
+      "fileNum": 55,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -5717,7 +5717,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCuero.oeste": {
-      "fileNum": 58,
+      "fileNum": 55,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -5760,7 +5760,7 @@
       "escala": 4
     },
     "cuerpoBajo.cotaDeMallas.norte": {
-      "fileNum": 59,
+      "fileNum": 56,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -5809,7 +5809,7 @@
       "escala": 4
     },
     "cuerpoBajo.cotaDeMallas.este": {
-      "fileNum": 59,
+      "fileNum": 56,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -5852,7 +5852,7 @@
       "escala": 4
     },
     "cuerpoBajo.cotaDeMallas.sur": {
-      "fileNum": 59,
+      "fileNum": 56,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -5901,7 +5901,7 @@
       "escala": 4
     },
     "cuerpoBajo.cotaDeMallas.oeste": {
-      "fileNum": 59,
+      "fileNum": 56,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -5944,7 +5944,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDePlacasCompleta.norte": {
-      "fileNum": 60,
+      "fileNum": 57,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -5993,7 +5993,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDePlacasCompleta.este": {
-      "fileNum": 60,
+      "fileNum": 57,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6036,7 +6036,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDePlacasCompleta.sur": {
-      "fileNum": 60,
+      "fileNum": 57,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -6085,7 +6085,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDePlacasCompleta.oeste": {
-      "fileNum": 60,
+      "fileNum": 57,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -6128,7 +6128,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaDeRoja.norte": {
-      "fileNum": 61,
+      "fileNum": 58,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -6177,7 +6177,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaDeRoja.este": {
-      "fileNum": 61,
+      "fileNum": 58,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6220,7 +6220,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaDeRoja.sur": {
-      "fileNum": 61,
+      "fileNum": 58,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -6269,7 +6269,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaDeRoja.oeste": {
-      "fileNum": 61,
+      "fileNum": 58,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -6312,7 +6312,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaLegendariaHEEoMH.norte": {
-      "fileNum": 62,
+      "fileNum": 59,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -6361,7 +6361,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaLegendariaHEEoMH.este": {
-      "fileNum": 62,
+      "fileNum": 59,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6404,7 +6404,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaLegendariaHEEoMH.sur": {
-      "fileNum": 62,
+      "fileNum": 59,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -6453,7 +6453,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaLegendariaHEEoMH.oeste": {
-      "fileNum": 62,
+      "fileNum": 59,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -6496,7 +6496,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCazador.norte": {
-      "fileNum": 63,
+      "fileNum": 60,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -6545,7 +6545,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCazador.este": {
-      "fileNum": 63,
+      "fileNum": 60,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6588,7 +6588,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCazador.sur": {
-      "fileNum": 63,
+      "fileNum": 60,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -6637,7 +6637,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraDeCazador.oeste": {
-      "fileNum": 63,
+      "fileNum": 60,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -6680,7 +6680,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaAzulHEEoHM.norte": {
-      "fileNum": 64,
+      "fileNum": 61,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -6729,7 +6729,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaAzulHEEoHM.este": {
-      "fileNum": 64,
+      "fileNum": 61,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6772,7 +6772,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaAzulHEEoHM.sur": {
-      "fileNum": 64,
+      "fileNum": 61,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -6821,7 +6821,7 @@
       "escala": 4
     },
     "cuerpoBajo.tunicaAzulHEEoHM.oeste": {
-      "fileNum": 64,
+      "fileNum": 61,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -6864,7 +6864,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraKlox.norte": {
-      "fileNum": 65,
+      "fileNum": 62,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -6913,7 +6913,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraKlox.este": {
-      "fileNum": 65,
+      "fileNum": 62,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -6956,7 +6956,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraKlox.sur": {
-      "fileNum": 65,
+      "fileNum": 62,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -7005,7 +7005,7 @@
       "escala": 4
     },
     "cuerpoBajo.armaduraKlox.oeste": {
-      "fileNum": 65,
+      "fileNum": 62,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -7048,7 +7048,7 @@
       "escala": 4
     },
     "bicho.hormiga.norte": {
-      "fileNum": 66,
+      "fileNum": 63,
       "x": 131,
       "y": 60,
       "w": 75,
@@ -7079,7 +7079,7 @@
       "escala": 4
     },
     "bicho.hormiga.este": {
-      "fileNum": 66,
+      "fileNum": 63,
       "x": 2,
       "y": 2,
       "w": 127,
@@ -7110,7 +7110,7 @@
       "escala": 4
     },
     "bicho.hormiga.sur": {
-      "fileNum": 66,
+      "fileNum": 63,
       "x": 156,
       "y": 118,
       "w": 71,
@@ -7141,7 +7141,7 @@
       "escala": 4
     },
     "bicho.hormiga.oeste": {
-      "fileNum": 66,
+      "fileNum": 63,
       "x": 148,
       "y": 175,
       "w": 109,
@@ -7172,7 +7172,7 @@
       "escala": 4
     },
     "bicho.murcielago.norte": {
-      "fileNum": 67,
+      "fileNum": 64,
       "x": 2,
       "y": 156,
       "w": 88,
@@ -7197,7 +7197,7 @@
       "escala": 4
     },
     "bicho.murcielago.este": {
-      "fileNum": 67,
+      "fileNum": 64,
       "x": 2,
       "y": 2,
       "w": 92,
@@ -7222,7 +7222,7 @@
       "escala": 4
     },
     "bicho.murcielago.sur": {
-      "fileNum": 67,
+      "fileNum": 64,
       "x": 2,
       "y": 212,
       "w": 88,
@@ -7247,7 +7247,7 @@
       "escala": 4
     },
     "bicho.murcielago.oeste": {
-      "fileNum": 67,
+      "fileNum": 64,
       "x": 2,
       "y": 79,
       "w": 91,
@@ -7272,7 +7272,7 @@
       "escala": 4
     },
     "bicho.gallo.norte": {
-      "fileNum": 68,
+      "fileNum": 65,
       "x": 2,
       "y": 2,
       "w": 41,
@@ -7333,7 +7333,7 @@
       "escala": 4
     },
     "bicho.gallo.este": {
-      "fileNum": 68,
+      "fileNum": 65,
       "x": 236,
       "y": 314,
       "w": 91,
@@ -7394,7 +7394,7 @@
       "escala": 4
     },
     "bicho.gallo.sur": {
-      "fileNum": 68,
+      "fileNum": 65,
       "x": 237,
       "y": 392,
       "w": 45,
@@ -7455,7 +7455,7 @@
       "escala": 4
     },
     "bicho.gallo.oeste": {
-      "fileNum": 68,
+      "fileNum": 65,
       "x": 198,
       "y": 80,
       "w": 96,
@@ -7516,7 +7516,7 @@
       "escala": 4
     },
     "bicho.rata.norte": {
-      "fileNum": 69,
+      "fileNum": 66,
       "x": 2,
       "y": 2,
       "w": 67,
@@ -7547,7 +7547,7 @@
       "escala": 4
     },
     "bicho.rata.este": {
-      "fileNum": 69,
+      "fileNum": 66,
       "x": 2,
       "y": 130,
       "w": 95,
@@ -7578,7 +7578,7 @@
       "escala": 4
     },
     "bicho.rata.sur": {
-      "fileNum": 69,
+      "fileNum": 66,
       "x": 2,
       "y": 66,
       "w": 62,
@@ -7609,7 +7609,7 @@
       "escala": 4
     },
     "bicho.rata.oeste": {
-      "fileNum": 69,
+      "fileNum": 66,
       "x": 99,
       "y": 167,
       "w": 96,
@@ -7640,7 +7640,7 @@
       "escala": 4
     },
     "bicho.serpiente.norte": {
-      "fileNum": 70,
+      "fileNum": 67,
       "x": 2,
       "y": 2,
       "w": 103,
@@ -7671,7 +7671,7 @@
       "escala": 4
     },
     "bicho.serpiente.este": {
-      "fileNum": 70,
+      "fileNum": 67,
       "x": 107,
       "y": 88,
       "w": 107,
@@ -7702,7 +7702,7 @@
       "escala": 4
     },
     "bicho.serpiente.sur": {
-      "fileNum": 70,
+      "fileNum": 67,
       "x": 111,
       "y": 290,
       "w": 72,
@@ -7733,7 +7733,7 @@
       "escala": 4
     },
     "bicho.serpiente.oeste": {
-      "fileNum": 70,
+      "fileNum": 67,
       "x": 2,
       "y": 232,
       "w": 107,
@@ -7764,7 +7764,7 @@
       "escala": 4
     },
     "bicho.quark.norte": {
-      "fileNum": 71,
+      "fileNum": 68,
       "x": 2,
       "y": 177,
       "w": 95,
@@ -7789,7 +7789,7 @@
       "escala": 4
     },
     "bicho.quark.este": {
-      "fileNum": 71,
+      "fileNum": 68,
       "x": 2,
       "y": 2,
       "w": 79,
@@ -7814,7 +7814,7 @@
       "escala": 4
     },
     "bicho.quark.sur": {
-      "fileNum": 71,
+      "fileNum": 68,
       "x": 2,
       "y": 225,
       "w": 87,
@@ -7839,7 +7839,7 @@
       "escala": 4
     },
     "bicho.quark.oeste": {
-      "fileNum": 71,
+      "fileNum": 68,
       "x": 2,
       "y": 101,
       "w": 79,
@@ -7864,7 +7864,7 @@
       "escala": 4
     },
     "bicho.cuervo.norte": {
-      "fileNum": 72,
+      "fileNum": 69,
       "x": 2,
       "y": 185,
       "w": 95,
@@ -7889,7 +7889,7 @@
       "escala": 4
     },
     "bicho.cuervo.este": {
-      "fileNum": 72,
+      "fileNum": 69,
       "x": 2,
       "y": 2,
       "w": 106,
@@ -7914,7 +7914,7 @@
       "escala": 4
     },
     "bicho.cuervo.sur": {
-      "fileNum": 72,
+      "fileNum": 69,
       "x": 2,
       "y": 249,
       "w": 89,
@@ -7939,7 +7939,7 @@
       "escala": 4
     },
     "bicho.cuervo.oeste": {
-      "fileNum": 72,
+      "fileNum": 69,
       "x": 2,
       "y": 104,
       "w": 125,
@@ -7964,7 +7964,7 @@
       "escala": 4
     },
     "bicho.pato.norte": {
-      "fileNum": 73,
+      "fileNum": 70,
       "x": 267,
       "y": 242,
       "w": 40,
@@ -8025,7 +8025,7 @@
       "escala": 4
     },
     "bicho.pato.este": {
-      "fileNum": 73,
+      "fileNum": 70,
       "x": 74,
       "y": 2,
       "w": 70,
@@ -8086,7 +8086,7 @@
       "escala": 4
     },
     "bicho.pato.sur": {
-      "fileNum": 73,
+      "fileNum": 70,
       "x": 214,
       "y": 242,
       "w": 51,
@@ -8147,7 +8147,7 @@
       "escala": 4
     },
     "bicho.pato.oeste": {
-      "fileNum": 73,
+      "fileNum": 70,
       "x": 212,
       "y": 319,
       "w": 71,
@@ -8208,7 +8208,7 @@
       "escala": 4
     },
     "bicho.escorpion.norte": {
-      "fileNum": 74,
+      "fileNum": 71,
       "x": 2,
       "y": 2,
       "w": 73,
@@ -8245,7 +8245,7 @@
       "escala": 4
     },
     "bicho.escorpion.este": {
-      "fileNum": 74,
+      "fileNum": 71,
       "x": 107,
       "y": 166,
       "w": 103,
@@ -8282,7 +8282,7 @@
       "escala": 4
     },
     "bicho.escorpion.sur": {
-      "fileNum": 74,
+      "fileNum": 71,
       "x": 212,
       "y": 248,
       "w": 67,
@@ -8319,7 +8319,7 @@
       "escala": 4
     },
     "bicho.escorpion.oeste": {
-      "fileNum": 74,
+      "fileNum": 71,
       "x": 2,
       "y": 84,
       "w": 103,
@@ -8356,43 +8356,79 @@
       "escala": 4
     },
     "piso.pastoA": {
-      "fileNum": 1,
+      "fileNum": 106,
       "x": 0,
       "y": 0,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «pastoA» bloque 0 de 4 4×4 tiles hoja=6000"
+      "origen": "AO piso «pastoA» bloque 0 de 4 4×4 tiles hoja=6000",
+      "escala": 4,
+      "regiones": [
+        [
+          0,
+          0,
+          512,
+          512
+        ]
+      ]
     },
     "piso.pastoB": {
-      "fileNum": 1,
+      "fileNum": 106,
       "x": 512,
       "y": 0,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «pastoB» bloque 1 de 4 4×4 tiles hoja=6000"
+      "origen": "AO piso «pastoB» bloque 1 de 4 4×4 tiles hoja=6000",
+      "escala": 4,
+      "regiones": [
+        [
+          512,
+          0,
+          512,
+          512
+        ]
+      ]
     },
     "piso.pastoC": {
-      "fileNum": 1,
-      "x": 1024,
-      "y": 0,
+      "fileNum": 106,
+      "x": 0,
+      "y": 512,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «pastoC» bloque 2 de 4 4×4 tiles hoja=6000"
+      "origen": "AO piso «pastoC» bloque 2 de 4 4×4 tiles hoja=6000",
+      "escala": 4,
+      "regiones": [
+        [
+          0,
+          512,
+          512,
+          512
+        ]
+      ]
     },
     "piso.pastoD": {
-      "fileNum": 1,
-      "x": 1536,
-      "y": 0,
+      "fileNum": 106,
+      "x": 512,
+      "y": 512,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «pastoD» bloque 3 de 4 4×4 tiles hoja=6000"
+      "origen": "AO piso «pastoD» bloque 3 de 4 4×4 tiles hoja=6000",
+      "escala": 4,
+      "regiones": [
+        [
+          512,
+          512,
+          512,
+          512
+        ]
+      ]
     },
     "piso.desierto": {
-      "fileNum": 2,
+      "fileNum": 1,
       "x": 0,
       "y": 0,
       "w": 512,
@@ -8401,7 +8437,7 @@
       "origen": "AO piso «desierto» bloque 0 de 1 4×4 tiles hoja=6021"
     },
     "piso.dungeon": {
-      "fileNum": 3,
+      "fileNum": 2,
       "x": 0,
       "y": 0,
       "w": 512,
@@ -8410,7 +8446,7 @@
       "origen": "AO piso «dungeon» bloque 0 de 1 4×4 tiles hoja=1533"
     },
     "piso.dungeonNewbie": {
-      "fileNum": 4,
+      "fileNum": 3,
       "x": 0,
       "y": 0,
       "w": 512,
@@ -8419,7 +8455,7 @@
       "origen": "AO piso «dungeonNewbie» bloque 0 de 1 4×4 tiles hoja=7500"
     },
     "piso.minas": {
-      "fileNum": 5,
+      "fileNum": 4,
       "x": 0,
       "y": 0,
       "w": 512,
@@ -8428,52 +8464,97 @@
       "origen": "AO piso «minas» bloque 0 de 1 4×4 tiles hoja=7508"
     },
     "piso.lava": {
-      "fileNum": 7,
+      "fileNum": 108,
       "x": 0,
       "y": 0,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «lava» bloque 0 de 9 4×4 tiles hoja=9510"
+      "origen": "AO piso «lava» bloque 0 de 9 4×4 tiles hoja=9510",
+      "escala": 4,
+      "regiones": [
+        [
+          0,
+          0,
+          512,
+          512
+        ]
+      ]
     },
     "piso.nieveA": {
-      "fileNum": 6,
+      "fileNum": 107,
       "x": 0,
       "y": 0,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «nieveA» bloque 0 de 4 4×4 tiles hoja=10139"
+      "origen": "AO piso «nieveA» bloque 0 de 4 4×4 tiles hoja=10139",
+      "escala": 4,
+      "regiones": [
+        [
+          0,
+          0,
+          512,
+          512
+        ]
+      ]
     },
     "piso.nieveB": {
-      "fileNum": 6,
+      "fileNum": 107,
       "x": 512,
       "y": 0,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «nieveB» bloque 1 de 4 4×4 tiles hoja=10139"
+      "origen": "AO piso «nieveB» bloque 1 de 4 4×4 tiles hoja=10139",
+      "escala": 4,
+      "regiones": [
+        [
+          512,
+          0,
+          512,
+          512
+        ]
+      ]
     },
     "piso.nieveC": {
-      "fileNum": 6,
-      "x": 1024,
-      "y": 0,
+      "fileNum": 107,
+      "x": 0,
+      "y": 512,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «nieveC» bloque 2 de 4 4×4 tiles hoja=10139"
+      "origen": "AO piso «nieveC» bloque 2 de 4 4×4 tiles hoja=10139",
+      "escala": 4,
+      "regiones": [
+        [
+          0,
+          512,
+          512,
+          512
+        ]
+      ]
     },
     "piso.nieveD": {
-      "fileNum": 6,
-      "x": 1536,
-      "y": 0,
+      "fileNum": 107,
+      "x": 512,
+      "y": 512,
       "w": 512,
       "h": 512,
       "frames": 1,
-      "origen": "AO piso «nieveD» bloque 3 de 4 4×4 tiles hoja=10139"
+      "origen": "AO piso «nieveD» bloque 3 de 4 4×4 tiles hoja=10139",
+      "escala": 4,
+      "regiones": [
+        [
+          512,
+          512,
+          512,
+          512
+        ]
+      ]
     },
     "bicho.cerdo.norte": {
-      "fileNum": 75,
+      "fileNum": 72,
       "x": 160,
       "y": 656,
       "w": 79,
@@ -8534,7 +8615,7 @@
       "escala": 4
     },
     "bicho.cerdo.este": {
-      "fileNum": 75,
+      "fileNum": 72,
       "x": 366,
       "y": 378,
       "w": 180,
@@ -8595,7 +8676,7 @@
       "escala": 4
     },
     "bicho.cerdo.sur": {
-      "fileNum": 75,
+      "fileNum": 72,
       "x": 545,
       "y": 566,
       "w": 75,
@@ -8656,7 +8737,7 @@
       "escala": 4
     },
     "bicho.cerdo.oeste": {
-      "fileNum": 75,
+      "fileNum": 72,
       "x": 2,
       "y": 190,
       "w": 204,
@@ -8717,7 +8798,7 @@
       "escala": 4
     },
     "bicho.aguila.norte": {
-      "fileNum": 76,
+      "fileNum": 73,
       "x": 2,
       "y": 185,
       "w": 95,
@@ -8742,7 +8823,7 @@
       "escala": 4
     },
     "bicho.aguila.este": {
-      "fileNum": 76,
+      "fileNum": 73,
       "x": 2,
       "y": 2,
       "w": 106,
@@ -8767,7 +8848,7 @@
       "escala": 4
     },
     "bicho.aguila.sur": {
-      "fileNum": 76,
+      "fileNum": 73,
       "x": 2,
       "y": 249,
       "w": 89,
@@ -8792,7 +8873,7 @@
       "escala": 4
     },
     "bicho.aguila.oeste": {
-      "fileNum": 76,
+      "fileNum": 73,
       "x": 2,
       "y": 104,
       "w": 128,
@@ -8817,7 +8898,7 @@
       "escala": 4
     },
     "bicho.vaca.norte": {
-      "fileNum": 77,
+      "fileNum": 74,
       "x": 449,
       "y": 1184,
       "w": 147,
@@ -8878,7 +8959,7 @@
       "escala": 4
     },
     "bicho.vaca.este": {
-      "fileNum": 77,
+      "fileNum": 74,
       "x": 917,
       "y": 398,
       "w": 303,
@@ -8939,7 +9020,7 @@
       "escala": 4
     },
     "bicho.vaca.sur": {
-      "fileNum": 77,
+      "fileNum": 74,
       "x": 726,
       "y": 2,
       "w": 179,
@@ -9000,7 +9081,7 @@
       "escala": 4
     },
     "bicho.vaca.oeste": {
-      "fileNum": 77,
+      "fileNum": 74,
       "x": 612,
       "y": 595,
       "w": 302,
@@ -9061,7 +9142,7 @@
       "escala": 4
     },
     "bicho.esqueleto.norte": {
-      "fileNum": 78,
+      "fileNum": 75,
       "x": 2,
       "y": 2,
       "w": 57,
@@ -9122,7 +9203,7 @@
       "escala": 4
     },
     "bicho.esqueleto.este": {
-      "fileNum": 78,
+      "fileNum": 75,
       "x": 439,
       "y": 2,
       "w": 61,
@@ -9183,7 +9264,7 @@
       "escala": 4
     },
     "bicho.esqueleto.sur": {
-      "fileNum": 78,
+      "fileNum": 75,
       "x": 297,
       "y": 385,
       "w": 57,
@@ -9244,7 +9325,7 @@
       "escala": 4
     },
     "bicho.esqueleto.oeste": {
-      "fileNum": 78,
+      "fileNum": 75,
       "x": 302,
       "y": 258,
       "w": 58,
@@ -9305,7 +9386,7 @@
       "escala": 4
     },
     "bicho.lobo.norte": {
-      "fileNum": 79,
+      "fileNum": 76,
       "x": 2,
       "y": 2,
       "w": 95,
@@ -9342,7 +9423,7 @@
       "escala": 4
     },
     "bicho.lobo.este": {
-      "fileNum": 79,
+      "fileNum": 76,
       "x": 265,
       "y": 479,
       "w": 259,
@@ -9379,7 +9460,7 @@
       "escala": 4
     },
     "bicho.lobo.sur": {
-      "fileNum": 79,
+      "fileNum": 76,
       "x": 390,
       "y": 2,
       "w": 116,
@@ -9416,7 +9497,7 @@
       "escala": 4
     },
     "bicho.lobo.oeste": {
-      "fileNum": 79,
+      "fileNum": 76,
       "x": 238,
       "y": 172,
       "w": 261,
@@ -9453,7 +9534,7 @@
       "escala": 4
     },
     "bicho.elementalDeTierra.norte": {
-      "fileNum": 80,
+      "fileNum": 77,
       "x": 2,
       "y": 770,
       "w": 120,
@@ -9514,7 +9595,7 @@
       "escala": 4
     },
     "bicho.elementalDeTierra.este": {
-      "fileNum": 80,
+      "fileNum": 77,
       "x": 2,
       "y": 518,
       "w": 140,
@@ -9575,7 +9656,7 @@
       "escala": 4
     },
     "bicho.elementalDeTierra.sur": {
-      "fileNum": 80,
+      "fileNum": 77,
       "x": 851,
       "y": 770,
       "w": 119,
@@ -9636,7 +9717,7 @@
       "escala": 4
     },
     "bicho.elementalDeTierra.oeste": {
-      "fileNum": 80,
+      "fileNum": 77,
       "x": 824,
       "y": 2,
       "w": 135,
@@ -9697,7 +9778,7 @@
       "escala": 4
     },
     "bicho.elementalDeFuego.norte": {
-      "fileNum": 81,
+      "fileNum": 78,
       "x": 2,
       "y": 2,
       "w": 147,
@@ -9758,7 +9839,7 @@
       "escala": 4
     },
     "bicho.elementalDeFuego.este": {
-      "fileNum": 81,
+      "fileNum": 78,
       "x": 278,
       "y": 1034,
       "w": 136,
@@ -9819,7 +9900,7 @@
       "escala": 4
     },
     "bicho.elementalDeFuego.sur": {
-      "fileNum": 81,
+      "fileNum": 78,
       "x": 2,
       "y": 518,
       "w": 149,
@@ -9880,7 +9961,7 @@
       "escala": 4
     },
     "bicho.elementalDeFuego.oeste": {
-      "fileNum": 81,
+      "fileNum": 78,
       "x": 861,
       "y": 2,
       "w": 140,
@@ -9941,7 +10022,7 @@
       "escala": 4
     },
     "bicho.elementalDeAgua.norte": {
-      "fileNum": 82,
+      "fileNum": 79,
       "x": 140,
       "y": 254,
       "w": 117,
@@ -10002,7 +10083,7 @@
       "escala": 4
     },
     "bicho.elementalDeAgua.este": {
-      "fileNum": 82,
+      "fileNum": 79,
       "x": 2,
       "y": 990,
       "w": 136,
@@ -10063,7 +10144,7 @@
       "escala": 4
     },
     "bicho.elementalDeAgua.sur": {
-      "fileNum": 82,
+      "fileNum": 79,
       "x": 119,
       "y": 749,
       "w": 115,
@@ -10124,7 +10205,7 @@
       "escala": 4
     },
     "bicho.elementalDeAgua.oeste": {
-      "fileNum": 82,
+      "fileNum": 79,
       "x": 830,
       "y": 2,
       "w": 136,
@@ -10185,7 +10266,7 @@
       "escala": 4
     },
     "bicho.duende.norte": {
-      "fileNum": 83,
+      "fileNum": 80,
       "x": 2,
       "y": 2,
       "w": 80,
@@ -10246,7 +10327,7 @@
       "escala": 4
     },
     "bicho.duende.este": {
-      "fileNum": 83,
+      "fileNum": 80,
       "x": 2,
       "y": 554,
       "w": 68,
@@ -10307,7 +10388,7 @@
       "escala": 4
     },
     "bicho.duende.sur": {
-      "fileNum": 83,
+      "fileNum": 80,
       "x": 436,
       "y": 126,
       "w": 88,
@@ -10368,7 +10449,7 @@
       "escala": 4
     },
     "bicho.duende.oeste": {
-      "fileNum": 83,
+      "fileNum": 80,
       "x": 302,
       "y": 360,
       "w": 98,
@@ -10429,7 +10510,7 @@
       "escala": 4
     },
     "bicho.zombie.norte": {
-      "fileNum": 84,
+      "fileNum": 81,
       "x": 610,
       "y": 546,
       "w": 64,
@@ -10490,7 +10571,7 @@
       "escala": 4
     },
     "bicho.zombie.este": {
-      "fileNum": 84,
+      "fileNum": 81,
       "x": 2,
       "y": 366,
       "w": 96,
@@ -10551,7 +10632,7 @@
       "escala": 4
     },
     "bicho.zombie.sur": {
-      "fileNum": 84,
+      "fileNum": 81,
       "x": 2,
       "y": 546,
       "w": 71,
@@ -10612,7 +10693,7 @@
       "escala": 4
     },
     "bicho.zombie.oeste": {
-      "fileNum": 84,
+      "fileNum": 81,
       "x": 584,
       "y": 2,
       "w": 95,
@@ -10673,7 +10754,7 @@
       "escala": 4
     },
     "bicho.tortugaGigante.norte": {
-      "fileNum": 101,
+      "fileNum": 98,
       "x": 2,
       "y": 2,
       "w": 171,
@@ -10722,7 +10803,7 @@
       "escala": 4
     },
     "bicho.tortugaGigante.este": {
-      "fileNum": 101,
+      "fileNum": 98,
       "x": 2,
       "y": 1031,
       "w": 249,
@@ -10772,7 +10853,7 @@
       "anclaY": 19
     },
     "bicho.tortugaGigante.sur": {
-      "fileNum": 101,
+      "fileNum": 98,
       "x": 531,
       "y": 239,
       "w": 176,
@@ -10821,7 +10902,7 @@
       "escala": 4
     },
     "bicho.tortugaGigante.oeste": {
-      "fileNum": 101,
+      "fileNum": 98,
       "x": 253,
       "y": 696,
       "w": 249,
@@ -10871,7 +10952,7 @@
       "anclaY": 19
     },
     "bicho.orco.norte": {
-      "fileNum": 85,
+      "fileNum": 82,
       "x": 2,
       "y": 2,
       "w": 155,
@@ -10932,7 +11013,7 @@
       "escala": 4
     },
     "bicho.orco.este": {
-      "fileNum": 85,
+      "fileNum": 82,
       "x": 795,
       "y": 406,
       "w": 163,
@@ -10993,7 +11074,7 @@
       "escala": 4
     },
     "bicho.orco.sur": {
-      "fileNum": 85,
+      "fileNum": 82,
       "x": 687,
       "y": 808,
       "w": 135,
@@ -11054,7 +11135,7 @@
       "escala": 4
     },
     "bicho.orco.oeste": {
-      "fileNum": 85,
+      "fileNum": 82,
       "x": 2,
       "y": 204,
       "w": 162,
@@ -11115,7 +11196,7 @@
       "escala": 4
     },
     "bicho.hormigaGigante.norte": {
-      "fileNum": 86,
+      "fileNum": 83,
       "x": 2,
       "y": 2,
       "w": 68,
@@ -11176,7 +11257,7 @@
       "escala": 4
     },
     "bicho.hormigaGigante.este": {
-      "fileNum": 86,
+      "fileNum": 83,
       "x": 506,
       "y": 390,
       "w": 82,
@@ -11237,7 +11318,7 @@
       "escala": 4
     },
     "bicho.hormigaGigante.sur": {
-      "fileNum": 86,
+      "fileNum": 83,
       "x": 520,
       "y": 196,
       "w": 72,
@@ -11298,7 +11379,7 @@
       "escala": 4
     },
     "bicho.hormigaGigante.oeste": {
-      "fileNum": 86,
+      "fileNum": 83,
       "x": 562,
       "y": 2,
       "w": 96,
@@ -11359,7 +11440,7 @@
       "escala": 4
     },
     "bicho.osoPardo.norte": {
-      "fileNum": 102,
+      "fileNum": 99,
       "x": 2,
       "y": 2,
       "w": 152,
@@ -11420,7 +11501,7 @@
       "escala": 4
     },
     "bicho.osoPardo.este": {
-      "fileNum": 102,
+      "fileNum": 99,
       "x": 776,
       "y": 999,
       "w": 256,
@@ -11481,7 +11562,7 @@
       "escala": 4
     },
     "bicho.osoPardo.sur": {
-      "fileNum": 102,
+      "fileNum": 99,
       "x": 615,
       "y": 260,
       "w": 151,
@@ -11542,7 +11623,7 @@
       "escala": 4
     },
     "bicho.osoPardo.oeste": {
-      "fileNum": 102,
+      "fileNum": 99,
       "x": 260,
       "y": 731,
       "w": 256,
@@ -11603,7 +11684,7 @@
       "escala": 4
     },
     "bicho.jabali.norte": {
-      "fileNum": 87,
+      "fileNum": 84,
       "x": 2,
       "y": 632,
       "w": 79,
@@ -11664,7 +11745,7 @@
       "escala": 4
     },
     "bicho.jabali.este": {
-      "fileNum": 87,
+      "fileNum": 84,
       "x": 390,
       "y": 422,
       "w": 192,
@@ -11725,7 +11806,7 @@
       "escala": 4
     },
     "bicho.jabali.sur": {
-      "fileNum": 87,
+      "fileNum": 84,
       "x": 549,
       "y": 632,
       "w": 75,
@@ -11786,7 +11867,7 @@
       "escala": 4
     },
     "bicho.jabali.oeste": {
-      "fileNum": 87,
+      "fileNum": 84,
       "x": 2,
       "y": 212,
       "w": 204,
@@ -11847,7 +11928,7 @@
       "escala": 4
     },
     "bicho.goblin.norte": {
-      "fileNum": 88,
+      "fileNum": 85,
       "x": 2,
       "y": 2,
       "w": 80,
@@ -11908,7 +11989,7 @@
       "escala": 4
     },
     "bicho.goblin.este": {
-      "fileNum": 88,
+      "fileNum": 85,
       "x": 57,
       "y": 450,
       "w": 53,
@@ -11969,7 +12050,7 @@
       "escala": 4
     },
     "bicho.goblin.sur": {
-      "fileNum": 88,
+      "fileNum": 85,
       "x": 412,
       "y": 126,
       "w": 80,
@@ -12030,7 +12111,7 @@
       "escala": 4
     },
     "bicho.goblin.oeste": {
-      "fileNum": 88,
+      "fileNum": 85,
       "x": 56,
       "y": 357,
       "w": 52,
@@ -12091,7 +12172,7 @@
       "escala": 4
     },
     "bicho.tigre.norte": {
-      "fileNum": 89,
+      "fileNum": 86,
       "x": 2,
       "y": 2,
       "w": 96,
@@ -12128,7 +12209,7 @@
       "escala": 4
     },
     "bicho.tigre.este": {
-      "fileNum": 89,
+      "fileNum": 86,
       "x": 260,
       "y": 198,
       "w": 247,
@@ -12165,7 +12246,7 @@
       "escala": 4
     },
     "bicho.tigre.sur": {
-      "fileNum": 89,
+      "fileNum": 86,
       "x": 394,
       "y": 2,
       "w": 127,
@@ -12202,7 +12283,7 @@
       "escala": 4
     },
     "bicho.tigre.oeste": {
-      "fileNum": 89,
+      "fileNum": 86,
       "x": 251,
       "y": 507,
       "w": 254,
@@ -12239,7 +12320,7 @@
       "escala": 4
     },
     "bicho.asesino.norte": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 2,
       "y": 2,
       "w": 104,
@@ -12288,7 +12369,7 @@
       "escala": 4
     },
     "bicho.asesino.este": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 214,
       "y": 374,
       "w": 104,
@@ -12331,7 +12412,7 @@
       "escala": 4
     },
     "bicho.asesino.sur": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 320,
       "y": 188,
       "w": 104,
@@ -12380,7 +12461,7 @@
       "escala": 4
     },
     "bicho.asesino.oeste": {
-      "fileNum": 47,
+      "fileNum": 44,
       "x": 320,
       "y": 2,
       "w": 104,
@@ -12423,7 +12504,7 @@
       "escala": 4
     },
     "bicho.aranaGigante.norte": {
-      "fileNum": 90,
+      "fileNum": 87,
       "x": 2,
       "y": 2,
       "w": 214,
@@ -12460,7 +12541,7 @@
       "escala": 4
     },
     "bicho.aranaGigante.este": {
-      "fileNum": 90,
+      "fileNum": 87,
       "x": 218,
       "y": 144,
       "w": 216,
@@ -12497,7 +12578,7 @@
       "escala": 4
     },
     "bicho.aranaGigante.sur": {
-      "fileNum": 90,
+      "fileNum": 87,
       "x": 438,
       "y": 286,
       "w": 214,
@@ -12534,7 +12615,7 @@
       "escala": 4
     },
     "bicho.aranaGigante.oeste": {
-      "fileNum": 90,
+      "fileNum": 87,
       "x": 2,
       "y": 570,
       "w": 216,
@@ -12571,7 +12652,7 @@
       "escala": 4
     },
     "bicho.beholder.norte": {
-      "fileNum": 103,
+      "fileNum": 100,
       "x": 2,
       "y": 2,
       "w": 204,
@@ -12602,7 +12683,7 @@
       "escala": 4
     },
     "bicho.beholder.este": {
-      "fileNum": 103,
+      "fileNum": 100,
       "x": 2,
       "y": 260,
       "w": 163,
@@ -12633,7 +12714,7 @@
       "escala": 4
     },
     "bicho.beholder.sur": {
-      "fileNum": 103,
+      "fileNum": 100,
       "x": 332,
       "y": 495,
       "w": 203,
@@ -12664,7 +12745,7 @@
       "escala": 4
     },
     "bicho.beholder.oeste": {
-      "fileNum": 103,
+      "fileNum": 100,
       "x": 497,
       "y": 260,
       "w": 163,
@@ -12695,7 +12776,7 @@
       "escala": 4
     },
     "bicho.lordOrco.norte": {
-      "fileNum": 91,
+      "fileNum": 88,
       "x": 2,
       "y": 393,
       "w": 97,
@@ -12732,7 +12813,7 @@
       "escala": 4
     },
     "bicho.lordOrco.este": {
-      "fileNum": 91,
+      "fileNum": 88,
       "x": 2,
       "y": 201,
       "w": 140,
@@ -12769,7 +12850,7 @@
       "escala": 4
     },
     "bicho.lordOrco.sur": {
-      "fileNum": 91,
+      "fileNum": 88,
       "x": 398,
       "y": 393,
       "w": 103,
@@ -12806,7 +12887,7 @@
       "escala": 4
     },
     "bicho.lordOrco.oeste": {
-      "fileNum": 91,
+      "fileNum": 88,
       "x": 2,
       "y": 2,
       "w": 140,
@@ -12843,7 +12924,7 @@
       "escala": 4
     },
     "bicho.liche.norte": {
-      "fileNum": 92,
+      "fileNum": 89,
       "x": 2,
       "y": 2,
       "w": 112,
@@ -12904,7 +12985,7 @@
       "escala": 4
     },
     "bicho.liche.este": {
-      "fileNum": 92,
+      "fileNum": 89,
       "x": 226,
       "y": 826,
       "w": 110,
@@ -12965,7 +13046,7 @@
       "escala": 4
     },
     "bicho.liche.sur": {
-      "fileNum": 92,
+      "fileNum": 89,
       "x": 2,
       "y": 414,
       "w": 112,
@@ -13026,7 +13107,7 @@
       "escala": 4
     },
     "bicho.liche.oeste": {
-      "fileNum": 92,
+      "fileNum": 89,
       "x": 676,
       "y": 2,
       "w": 110,
@@ -13087,7 +13168,7 @@
       "escala": 4
     },
     "bicho.ogro.norte": {
-      "fileNum": 93,
+      "fileNum": 90,
       "x": 2,
       "y": 1264,
       "w": 207,
@@ -13136,7 +13217,7 @@
       "escala": 4
     },
     "bicho.ogro.este": {
-      "fileNum": 93,
+      "fileNum": 90,
       "x": 397,
       "y": 326,
       "w": 163,
@@ -13179,7 +13260,7 @@
       "escala": 4
     },
     "bicho.ogro.sur": {
-      "fileNum": 93,
+      "fileNum": 90,
       "x": 692,
       "y": 2,
       "w": 228,
@@ -13228,7 +13309,7 @@
       "escala": 4
     },
     "bicho.ogro.oeste": {
-      "fileNum": 93,
+      "fileNum": 90,
       "x": 462,
       "y": 650,
       "w": 228,
@@ -13271,7 +13352,7 @@
       "escala": 4
     },
     "bicho.pinguino.norte": {
-      "fileNum": 94,
+      "fileNum": 91,
       "x": 108,
       "y": 358,
       "w": 51,
@@ -13332,7 +13413,7 @@
       "escala": 4
     },
     "bicho.pinguino.este": {
-      "fileNum": 94,
+      "fileNum": 91,
       "x": 2,
       "y": 281,
       "w": 46,
@@ -13393,7 +13474,7 @@
       "escala": 4
     },
     "bicho.pinguino.sur": {
-      "fileNum": 94,
+      "fileNum": 91,
       "x": 2,
       "y": 204,
       "w": 51,
@@ -13454,7 +13535,7 @@
       "escala": 4
     },
     "bicho.pinguino.oeste": {
-      "fileNum": 94,
+      "fileNum": 91,
       "x": 290,
       "y": 2,
       "w": 46,
@@ -13515,7 +13596,7 @@
       "escala": 4
     },
     "bicho.pequenoDragonRojo.norte": {
-      "fileNum": 95,
+      "fileNum": 92,
       "x": 372,
       "y": 608,
       "w": 308,
@@ -13564,7 +13645,7 @@
       "escala": 4
     },
     "bicho.pequenoDragonRojo.este": {
-      "fileNum": 95,
+      "fileNum": 92,
       "x": 2,
       "y": 1188,
       "w": 368,
@@ -13613,7 +13694,7 @@
       "escala": 4
     },
     "bicho.pequenoDragonRojo.sur": {
-      "fileNum": 95,
+      "fileNum": 92,
       "x": 677,
       "y": 406,
       "w": 223,
@@ -13662,7 +13743,7 @@
       "escala": 4
     },
     "bicho.pequenoDragonRojo.oeste": {
-      "fileNum": 95,
+      "fileNum": 92,
       "x": 372,
       "y": 204,
       "w": 368,
@@ -13711,7 +13792,7 @@
       "escala": 4
     },
     "bicho.viudaNegra.norte": {
-      "fileNum": 96,
+      "fileNum": 93,
       "x": 2,
       "y": 2,
       "w": 214,
@@ -13748,7 +13829,7 @@
       "escala": 4
     },
     "bicho.viudaNegra.este": {
-      "fileNum": 96,
+      "fileNum": 93,
       "x": 218,
       "y": 144,
       "w": 216,
@@ -13785,7 +13866,7 @@
       "escala": 4
     },
     "bicho.viudaNegra.sur": {
-      "fileNum": 96,
+      "fileNum": 93,
       "x": 438,
       "y": 286,
       "w": 214,
@@ -13822,7 +13903,7 @@
       "escala": 4
     },
     "bicho.viudaNegra.oeste": {
-      "fileNum": 96,
+      "fileNum": 93,
       "x": 2,
       "y": 570,
       "w": 216,
@@ -13859,7 +13940,7 @@
       "escala": 4
     },
     "bicho.loboInvernal.norte": {
-      "fileNum": 97,
+      "fileNum": 94,
       "x": 2,
       "y": 2,
       "w": 95,
@@ -13896,7 +13977,7 @@
       "escala": 4
     },
     "bicho.loboInvernal.este": {
-      "fileNum": 97,
+      "fileNum": 94,
       "x": 265,
       "y": 479,
       "w": 259,
@@ -13933,7 +14014,7 @@
       "escala": 4
     },
     "bicho.loboInvernal.sur": {
-      "fileNum": 97,
+      "fileNum": 94,
       "x": 390,
       "y": 2,
       "w": 116,
@@ -13970,7 +14051,7 @@
       "escala": 4
     },
     "bicho.loboInvernal.oeste": {
-      "fileNum": 97,
+      "fileNum": 94,
       "x": 238,
       "y": 172,
       "w": 261,
@@ -14007,7 +14088,7 @@
       "escala": 4
     },
     "bicho.medusa.norte": {
-      "fileNum": 98,
+      "fileNum": 95,
       "x": 150,
       "y": 576,
       "w": 146,
@@ -14074,7 +14155,7 @@
       "escala": 4
     },
     "bicho.medusa.este": {
-      "fileNum": 98,
+      "fileNum": 95,
       "x": 356,
       "y": 862,
       "w": 175,
@@ -14141,7 +14222,7 @@
       "escala": 4
     },
     "bicho.medusa.sur": {
-      "fileNum": 98,
+      "fileNum": 95,
       "x": 2,
       "y": 2,
       "w": 186,
@@ -14208,7 +14289,7 @@
       "escala": 4
     },
     "bicho.medusa.oeste": {
-      "fileNum": 98,
+      "fileNum": 95,
       "x": 2,
       "y": 1144,
       "w": 236,
@@ -14275,7 +14356,7 @@
       "escala": 4
     },
     "bicho.cthulu.norte": {
-      "fileNum": 108,
+      "fileNum": 105,
       "x": 2,
       "y": 2,
       "w": 380,
@@ -14324,7 +14405,7 @@
       "escala": 4
     },
     "bicho.cthulu.este": {
-      "fileNum": 108,
+      "fileNum": 105,
       "x": 2,
       "y": 1394,
       "w": 380,
@@ -14373,7 +14454,7 @@
       "escala": 4
     },
     "bicho.cthulu.sur": {
-      "fileNum": 108,
+      "fileNum": 105,
       "x": 766,
       "y": 698,
       "w": 380,
@@ -14422,7 +14503,7 @@
       "escala": 4
     },
     "bicho.cthulu.oeste": {
-      "fileNum": 108,
+      "fileNum": 105,
       "x": 2,
       "y": 350,
       "w": 380,
@@ -14471,7 +14552,7 @@
       "escala": 4
     },
     "bicho.osoPolar.norte": {
-      "fileNum": 100,
+      "fileNum": 97,
       "x": 2,
       "y": 2,
       "w": 152,
@@ -14532,7 +14613,7 @@
       "escala": 4
     },
     "bicho.osoPolar.este": {
-      "fileNum": 100,
+      "fileNum": 97,
       "x": 776,
       "y": 999,
       "w": 256,
@@ -14593,7 +14674,7 @@
       "escala": 4
     },
     "bicho.osoPolar.sur": {
-      "fileNum": 100,
+      "fileNum": 97,
       "x": 615,
       "y": 260,
       "w": 151,
@@ -14654,7 +14735,7 @@
       "escala": 4
     },
     "bicho.osoPolar.oeste": {
-      "fileNum": 100,
+      "fileNum": 97,
       "x": 260,
       "y": 731,
       "w": 256,
@@ -14715,7 +14796,7 @@
       "escala": 4
     },
     "bicho.demonio.norte": {
-      "fileNum": 99,
+      "fileNum": 96,
       "x": 2,
       "y": 1125,
       "w": 196,
@@ -14782,7 +14863,7 @@
       "escala": 4
     },
     "bicho.demonio.este": {
-      "fileNum": 99,
+      "fileNum": 96,
       "x": 890,
       "y": 564,
       "w": 220,
@@ -14849,7 +14930,7 @@
       "escala": 4
     },
     "bicho.demonio.sur": {
-      "fileNum": 99,
+      "fileNum": 96,
       "x": 200,
       "y": 1405,
       "w": 196,
@@ -14916,7 +14997,7 @@
       "escala": 4
     },
     "bicho.demonio.oeste": {
-      "fileNum": 99,
+      "fileNum": 96,
       "x": 224,
       "y": 283,
       "w": 220,
@@ -14983,7 +15064,7 @@
       "escala": 4
     },
     "bicho.golemDeHielo.norte": {
-      "fileNum": 107,
+      "fileNum": 104,
       "x": 938,
       "y": 352,
       "w": 292,
@@ -15026,7 +15107,7 @@
       "escala": 4
     },
     "bicho.golemDeHielo.este": {
-      "fileNum": 107,
+      "fileNum": 104,
       "x": 223,
       "y": 2,
       "w": 219,
@@ -15069,7 +15150,7 @@
       "escala": 4
     },
     "bicho.golemDeHielo.sur": {
-      "fileNum": 107,
+      "fileNum": 104,
       "x": 236,
       "y": 1000,
       "w": 286,
@@ -15112,7 +15193,7 @@
       "escala": 4
     },
     "bicho.golemDeHielo.oeste": {
-      "fileNum": 107,
+      "fileNum": 104,
       "x": 470,
       "y": 352,
       "w": 232,
@@ -15155,7 +15236,7 @@
       "escala": 4
     },
     "bicho.golem.norte": {
-      "fileNum": 106,
+      "fileNum": 103,
       "x": 2,
       "y": 2,
       "w": 118,
@@ -15216,7 +15297,7 @@
       "escala": 2
     },
     "bicho.golem.este": {
-      "fileNum": 106,
+      "fileNum": 103,
       "x": 146,
       "y": 177,
       "w": 142,
@@ -15277,7 +15358,7 @@
       "escala": 2
     },
     "bicho.golem.sur": {
-      "fileNum": 106,
+      "fileNum": 103,
       "x": 692,
       "y": 701,
       "w": 136,
@@ -15338,7 +15419,7 @@
       "escala": 2
     },
     "bicho.golem.oeste": {
-      "fileNum": 106,
+      "fileNum": 103,
       "x": 434,
       "y": 527,
       "w": 142,
@@ -15399,7 +15480,7 @@
       "escala": 2
     },
     "bicho.dragonRojo.norte": {
-      "fileNum": 104,
+      "fileNum": 101,
       "x": 2,
       "y": 2,
       "w": 205,
@@ -15484,7 +15565,7 @@
       "escala": 2
     },
     "bicho.dragonRojo.este": {
-      "fileNum": 104,
+      "fileNum": 101,
       "x": 2,
       "y": 981,
       "w": 273,
@@ -15569,7 +15650,7 @@
       "escala": 2
     },
     "bicho.dragonRojo.sur": {
-      "fileNum": 105,
+      "fileNum": 102,
       "x": 2,
       "y": 2,
       "w": 206,
@@ -15654,7 +15735,7 @@
       "escala": 2
     },
     "bicho.dragonRojo.oeste": {
-      "fileNum": 105,
+      "fileNum": 102,
       "x": 552,
       "y": 870,
       "w": 273,
