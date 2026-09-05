@@ -1,0 +1,15 @@
+recurso,autor,tipo,licencia,comercial,atribucion,modificacion,riesgo_content_id,fuente_url,evidencia,fecha_verificacion,recomendacion,carpeta_destino
+Interface Sounds,Kenney,SFX,CC0 1.0,si,no,si,nulo,https://kenney.nl/assets/interface-sounds,Licenses/kenney-interface-sounds/,2026-09-05,USAR,Client/Data/audio/sfx/ui/
+UI Audio,Kenney,SFX,CC0 1.0,si,no,si,nulo,https://kenney.nl/assets/ui-audio,Licenses/kenney-ui-audio/,2026-09-05,USAR,Client/Data/audio/sfx/ui/
+Impact Sounds,Kenney,SFX,CC0 1.0,si,no,si,nulo,https://kenney.nl/assets/impact-sounds,Licenses/kenney-impact-sounds/,2026-09-05,USAR,Client/Data/audio/sfx/impact/
+RPG Audio,Kenney,SFX,CC0 1.0,si,no,si,nulo,https://kenney.nl/assets/rpg-audio,Licenses/kenney-rpg-audio/,2026-09-05,USAR,Client/Data/audio/sfx/tower/
+Music Jingles,Kenney,SFX,CC0 1.0,si,no,si,nulo,https://kenney.nl/assets/music-jingles,Licenses/kenney-music-jingles/,2026-09-05,USAR,Client/Data/audio/sfx/game/
+RPG Sound Pack,artisticdude,SFX,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/rpg-sound-pack,Licenses/oga-rpg-sound-pack/,2026-09-05,USAR,Client/Data/audio/sfx/attack/
+80 CC0 RPG SFX,rubberduck,SFX,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/80-cc0-rpg-sfx,Licenses/oga-80-cc0-rpg-sfx/,2026-09-05,USAR,Client/Data/audio/sfx/enemy/
+Medieval Exploration,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-exploration,Licenses/oga-medieval-exploration/,2026-09-05,USAR,Client/Data/audio/music/menu.mp3
+Medieval The Old Tower Inn,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-the-old-tower-inn,Licenses/oga-medieval-the-old-tower-inn/,2026-09-05,USAR,Client/Data/audio/music/calm.wav
+Medieval Market Day,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-market-day,Licenses/oga-medieval-market-day/,2026-09-05,USAR,Client/Data/audio/music/normal.mp3
+Medieval Battle,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-battle,Licenses/oga-medieval-battle/,2026-09-05,USAR,Client/Data/audio/music/intense.mp3
+Epic Boss Battle,SubspaceAudio (Juhani Junkala),Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/boss-battle-music,Licenses/oga-boss-battle-music/,2026-09-05,USAR,Client/Data/audio/music/boss.wav
+Medieval Victory Theme,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-victory-theme,Licenses/oga-medieval-victory-theme/,2026-09-05,USAR,Client/Data/audio/music/victory.mp3
+Medieval Defeat Theme,RandomMind,Musica,CC0 1.0,si,no,si,nulo,https://opengameart.org/content/medieval-defeat-theme,Licenses/oga-medieval-defeat-theme/,2026-09-05,USAR,Client/Data/audio/music/defeat.mp3

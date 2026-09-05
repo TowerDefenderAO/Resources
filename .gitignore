@@ -77,3 +77,19 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+
+# -----------------------------------------------------------------------------
+#  Audio: los originales sin tocar
+# -----------------------------------------------------------------------------
+# Audio\Source\ son los .zip y los .wav tal como los bajó `bajar.sh`: 248 MB de
+# packs completos de los que el juego usa 76 archivos. Misma regla de siempre —
+# se versiona la fuente que se usa, no el material crudo del que salió—, y acá
+# «la fuente que se usa» son los archivos ya elegidos, que viven en
+# Client\Data\audio\.
+#
+# ⚠ Lo que SÍ se versiona es Audio\Licenses\: son kilobytes y es la evidencia de
+# que cada sonido es CC0. Si algún día llega un reclamo, eso es lo que se muestra.
+# Por eso la regla apunta a Source\ y no a Audio\ entero.
+
+Audio/Source/
+Audio/_pages/
