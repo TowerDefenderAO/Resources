@@ -1,0 +1,46 @@
+{
+  // Las piezas de interfaz recortadas de la hoja.
+  //
+  // ⚠ LO ESCRIBE `--recortar-ui`. Editarlo a mano se pierde en el próximo
+  //   recorte, salvo el campo `margen`, que es lo único que conviene
+  //   corregir a ojo (ver abajo).
+  //
+  // `x`, `y`, `w`, `h` son la posición de la pieza DENTRO de la hoja. El
+  // juego no los usa —cada pieza ya está exportada suelta— pero son la
+  // trazabilidad: dicen de dónde salió cada archivo.
+  //
+  // `margen` es el 9-slice: cuántos píxeles de cada borde NO se estiran.
+  // Es una SUGERENCIA calculada mirando dónde deja de cambiar el dibujo.
+  // Acierta en paneles y botones; en las piezas con esquinas ornamentadas
+  // conviene mirarlo en pantalla y corregirlo. Se escribe una vez.
+
+  "hoja": "sheet.png",
+  "hojaAncho": 1536,
+  "hojaAlto": 1024,
+
+  "piezas": {
+    "panel": { "x": 61, "y": 36, "w": 680, "h": 149, "margen": 37 },
+    "panel_elevated": { "x": 795, "y": 36, "w": 681, "h": 149, "margen": 37 },
+    "button": { "x": 61, "y": 221, "w": 330, "h": 106, "margen": 37 },
+    "button_hover": { "x": 423, "y": 221, "w": 330, "h": 106, "margen": 39 },
+    "button_pressed": { "x": 784, "y": 221, "w": 329, "h": 106, "margen": 40 },
+    "button_disabled": { "x": 1146, "y": 221, "w": 330, "h": 105, "margen": 36 },
+    "tab_active": { "x": 240, "y": 366, "w": 466, "h": 90, "margen": 40 },
+    "tab_inactive": { "x": 784, "y": 366, "w": 511, "h": 90, "margen": 40 },
+    "slot": { "x": 60, "y": 490, "w": 181, "h": 171, "margen": 41 },
+    "slot_common": { "x": 268, "y": 490, "w": 178, "h": 171, "margen": 42 },
+    "slot_uncommon": { "x": 473, "y": 490, "w": 179, "h": 171, "margen": 40 },
+    "slot_rare": { "x": 678, "y": 490, "w": 179, "h": 171, "margen": 47 },
+    "slot_epic": { "x": 883, "y": 490, "w": 179, "h": 171, "margen": 42 },
+    "slot_legendary": { "x": 1089, "y": 490, "w": 179, "h": 171, "margen": 48 },
+    "slot_unique": { "x": 1296, "y": 490, "w": 180, "h": 171, "margen": 45 },
+    "bar_rail": { "x": 61, "y": 719, "w": 715, "h": 81, "margen": 32 },
+    "bar_fill": { "x": 812, "y": 745, "w": 547, "h": 38, "margen": 12 },
+    "bar_cap": { "x": 1393, "y": 721, "w": 83, "h": 82, "margen": 33 },
+    "corner": { "x": 61, "y": 847, "w": 102, "h": 104, "margen": 45 },
+    "rivet": { "x": 252, "y": 878, "w": 50, "h": 50, "margen": 22 },
+    "divider": { "x": 410, "y": 890, "w": 651, "h": 22, "margen": 9 },
+    "chevron": { "x": 1164, "y": 876, "w": 74, "h": 48, "margen": 21 },
+    "coin": { "x": 1360, "y": 852, "w": 99, "h": 99, "margen": 44 }
+  }
+}
